@@ -1,0 +1,30 @@
+{
+  "clip": "praetor",
+  "character": "12_平规衡司",
+  "fps": 60,
+  "canvas_px": [
+    512,
+    320
+  ],
+  "pivot_px": [
+    256,
+    320
+  ],
+  "loop": false,
+  "key_pose_frames_zero_based": [
+    0,
+    14,
+    30,
+    43,
+    56,
+    71
+  ],
+  "frames": 90,
+  "source": "praetor.png",
+  "redrawn_key_poses": false,
+  "readability_cuts_after_key_one_based": [
+    4
+  ],
+  "low_overlap_holds_after_key_one_based": [],
+  "source_warnings": []
+}

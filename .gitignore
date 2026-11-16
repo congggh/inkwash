@@ -1,0 +1,11 @@
+# 图像与媒体素材体积过大，不入库
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.psd
+*.mp4
+*.mov
+*.pyc
+__pycache__/

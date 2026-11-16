@@ -1,0 +1,715 @@
+[
+  {
+    "clip": "boss_finisher",
+    "character": "01_墨痕",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      15
+    ],
+    "frames": 16,
+    "source": "boss_finisher.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      1,
+      3
+    ],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": [
+      "frame 3: artwork touches cell edge"
+    ]
+  },
+  {
+    "clip": "brake",
+    "character": "01_墨痕",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      4,
+      8,
+      11
+    ],
+    "frames": 16,
+    "source": "brake.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": [
+      "frame 3: artwork touches cell edge"
+    ]
+  },
+  {
+    "clip": "dash",
+    "character": "01_墨痕",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "frames": 11,
+    "source": "dash.png",
+    "redrawn_key_poses": true,
+    "readability_cuts_after_key_one_based": [],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": [],
+    "gameplay": {
+      "duration_ms": 180,
+      "distance_m": 3.6,
+      "speed_m_s": 20,
+      "root_y_delta_m": 0,
+      "invulnerability_ms": 140
+    }
+  },
+  {
+    "clip": "fold_slingshot",
+    "character": "01_墨痕",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      4,
+      9,
+      14,
+      16,
+      20
+    ],
+    "frames": 26,
+    "source": "fold_slingshot.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      2
+    ],
+    "low_overlap_holds_after_key_one_based": [
+      4
+    ],
+    "source_warnings": [
+      "frame 3: artwork touches cell edge"
+    ]
+  },
+  {
+    "clip": "idle",
+    "character": "01_墨痕",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": true,
+    "key_pose_frames_zero_based": [
+      0,
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56
+    ],
+    "frames": 64,
+    "source": "idle.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": []
+  },
+  {
+    "clip": "jump",
+    "character": "01_墨痕",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      12
+    ],
+    "frames": 13,
+    "source": "jump.png",
+    "redrawn_key_poses": true,
+    "readability_cuts_after_key_one_based": [],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": [
+      "frame 8: artwork touches cell edge"
+    ]
+  },
+  {
+    "clip": "parry_ripout",
+    "character": "01_墨痕",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      2,
+      6,
+      21,
+      28,
+      31,
+      35,
+      38
+    ],
+    "frames": 44,
+    "source": "parry_ripout.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      1,
+      2,
+      3
+    ],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": []
+  },
+  {
+    "clip": "pogo_rift",
+    "character": "01_墨痕",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      2,
+      8,
+      12,
+      15,
+      18,
+      21,
+      24
+    ],
+    "frames": 30,
+    "source": "pogo_rift.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      2,
+      4,
+      5
+    ],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": [
+      "frame 6: artwork touches cell edge"
+    ]
+  },
+  {
+    "clip": "run",
+    "character": "01_墨痕",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": true,
+    "key_pose_frames_zero_based": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28
+    ],
+    "frames": 32,
+    "source": "run.png",
+    "redrawn_key_poses": true,
+    "readability_cuts_after_key_one_based": [],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": []
+  },
+  {
+    "clip": "slash_combo",
+    "character": "01_墨痕",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      5,
+      12,
+      16,
+      22,
+      32,
+      40,
+      53
+    ],
+    "frames": 54,
+    "source": "slash_combo.png",
+    "redrawn_key_poses": true,
+    "readability_cuts_after_key_one_based": [],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": [
+      "frame 2: artwork touches cell edge",
+      "frame 3: artwork touches cell edge",
+      "frame 6: artwork touches cell edge",
+      "frame 7: artwork touches cell edge",
+      "frame 8: artwork touches cell edge"
+    ],
+    "stage_frame_counts": [
+      16,
+      16,
+      22
+    ]
+  },
+  {
+    "clip": "jailer",
+    "character": "02_盲眼巡卒",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      14,
+      21,
+      59,
+      66,
+      77
+    ],
+    "frames": 92,
+    "source": "jailer.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": []
+  },
+  {
+    "clip": "warden",
+    "character": "03_镇峰狱尉",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      14,
+      50,
+      74,
+      89,
+      106
+    ],
+    "frames": 122,
+    "source": "warden.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      3,
+      4
+    ],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": [
+      "frame 3: artwork touches cell edge"
+    ]
+  },
+  {
+    "clip": "momei",
+    "character": "04_墨梅",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      14,
+      27,
+      37,
+      51,
+      62
+    ],
+    "frames": 88,
+    "source": "momei.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      2,
+      4
+    ],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": []
+  },
+  {
+    "clip": "laborer",
+    "character": "05_巡水工偶",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      14,
+      40,
+      50,
+      59,
+      68
+    ],
+    "frames": 83,
+    "source": "laborer.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      4
+    ],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": [
+      "frame 1: artwork touches cell edge"
+    ]
+  },
+  {
+    "clip": "magistrate",
+    "character": "06_伏波画督",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      14,
+      38,
+      52,
+      62,
+      77
+    ],
+    "frames": 95,
+    "source": "magistrate.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      4
+    ],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": [
+      "frame 3: artwork touches cell edge",
+      "frame 6: artwork touches cell edge"
+    ]
+  },
+  {
+    "clip": "mozhu",
+    "character": "07_墨竹",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      14,
+      41,
+      52,
+      66,
+      79
+    ],
+    "frames": 104,
+    "source": "mozhu.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      2,
+      4
+    ],
+    "low_overlap_holds_after_key_one_based": [
+      4
+    ],
+    "source_warnings": [
+      "frame 3: artwork touches cell edge"
+    ]
+  },
+  {
+    "clip": "shade",
+    "character": "08_守碑阴傀",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      14,
+      25,
+      67,
+      76,
+      90
+    ],
+    "frames": 112,
+    "source": "shade.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      4
+    ],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": []
+  },
+  {
+    "clip": "inquisitor",
+    "character": "09_司弦刑官",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      14,
+      44,
+      50,
+      64,
+      79
+    ],
+    "frames": 98,
+    "source": "inquisitor.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      4
+    ],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": [
+      "frame 3: artwork touches cell edge",
+      "frame 4: artwork touches cell edge",
+      "frame 6: artwork touches cell edge"
+    ]
+  },
+  {
+    "clip": "mogu",
+    "character": "10_墨骨",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      14,
+      44,
+      53,
+      69,
+      83
+    ],
+    "frames": 109,
+    "source": "mogu.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      2,
+      4
+    ],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": []
+  },
+  {
+    "clip": "deacon",
+    "character": "11_去色司祝",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      14,
+      23,
+      56,
+      67,
+      80
+    ],
+    "frames": 99,
+    "source": "deacon.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      4
+    ],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": []
+  },
+  {
+    "clip": "praetor",
+    "character": "12_平规衡司",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      14,
+      30,
+      43,
+      56,
+      71
+    ],
+    "frames": 90,
+    "source": "praetor.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      4
+    ],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": []
+  },
+  {
+    "clip": "gukuangmo",
+    "character": "13_顾狂墨",
+    "fps": 60,
+    "canvas_px": [
+      512,
+      320
+    ],
+    "pivot_px": [
+      256,
+      320
+    ],
+    "loop": false,
+    "key_pose_frames_zero_based": [
+      0,
+      16,
+      27,
+      41,
+      52,
+      68
+    ],
+    "frames": 94,
+    "source": "gukuangmo.png",
+    "redrawn_key_poses": false,
+    "readability_cuts_after_key_one_based": [
+      1,
+      4
+    ],
+    "low_overlap_holds_after_key_one_based": [],
+    "source_warnings": []
+  }
+]

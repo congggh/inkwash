@@ -1,0 +1,27 @@
+{
+  "character": "01_墨痕",
+  "clip": "pogo_rift",
+  "frames": 8,
+  "canvas_px": [
+    548,
+    792
+  ],
+  "pivot_px": [
+    274,
+    780
+  ],
+  "duration_ms": [
+    33,
+    100,
+    67,
+    50,
+    50,
+    67,
+    50,
+    80
+  ],
+  "loop": false,
+  "warnings": [
+    "frame 6: artwork touches cell edge"
+  ]
+}

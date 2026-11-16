@@ -1,0 +1,30 @@
+{
+  "clip": "idle",
+  "character": "01_墨痕",
+  "fps": 60,
+  "canvas_px": [
+    512,
+    320
+  ],
+  "pivot_px": [
+    256,
+    320
+  ],
+  "loop": true,
+  "key_pose_frames_zero_based": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56
+  ],
+  "frames": 64,
+  "source": "idle.png",
+  "redrawn_key_poses": false,
+  "readability_cuts_after_key_one_based": [],
+  "low_overlap_holds_after_key_one_based": [],
+  "source_warnings": []
+}

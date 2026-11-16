@@ -1,0 +1,25 @@
+{
+  "character": "07_墨竹",
+  "clip": "mozhu",
+  "frames": 6,
+  "canvas_px": [
+    557,
+    536
+  ],
+  "pivot_px": [
+    278,
+    524
+  ],
+  "duration_ms": [
+    240,
+    460,
+    170,
+    240,
+    230,
+    400
+  ],
+  "loop": false,
+  "warnings": [
+    "frame 3: artwork touches cell edge"
+  ]
+}

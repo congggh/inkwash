@@ -1,0 +1,32 @@
+{
+  "clip": "jump",
+  "character": "01_墨痕",
+  "fps": 60,
+  "canvas_px": [
+    512,
+    320
+  ],
+  "pivot_px": [
+    256,
+    320
+  ],
+  "loop": false,
+  "key_pose_frames_zero_based": [
+    0,
+    2,
+    3,
+    4,
+    6,
+    8,
+    9,
+    12
+  ],
+  "frames": 13,
+  "source": "jump.png",
+  "redrawn_key_poses": true,
+  "readability_cuts_after_key_one_based": [],
+  "low_overlap_holds_after_key_one_based": [],
+  "source_warnings": [
+    "frame 8: artwork touches cell edge"
+  ]
+}

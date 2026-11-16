@@ -1,0 +1,25 @@
+{
+  "character": "03_镇峰狱尉",
+  "clip": "warden",
+  "frames": 6,
+  "canvas_px": [
+    560,
+    536
+  ],
+  "pivot_px": [
+    280,
+    524
+  ],
+  "duration_ms": [
+    240,
+    600,
+    400,
+    260,
+    280,
+    260
+  ],
+  "loop": false,
+  "warnings": [
+    "frame 3: artwork touches cell edge"
+  ]
+}

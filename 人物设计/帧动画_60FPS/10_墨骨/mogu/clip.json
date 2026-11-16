@@ -1,0 +1,31 @@
+{
+  "clip": "mogu",
+  "character": "10_墨骨",
+  "fps": 60,
+  "canvas_px": [
+    512,
+    320
+  ],
+  "pivot_px": [
+    256,
+    320
+  ],
+  "loop": false,
+  "key_pose_frames_zero_based": [
+    0,
+    14,
+    44,
+    53,
+    69,
+    83
+  ],
+  "frames": 109,
+  "source": "mogu.png",
+  "redrawn_key_poses": false,
+  "readability_cuts_after_key_one_based": [
+    2,
+    4
+  ],
+  "low_overlap_holds_after_key_one_based": [],
+  "source_warnings": []
+}

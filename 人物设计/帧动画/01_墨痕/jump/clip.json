@@ -1,0 +1,27 @@
+{
+  "character": "01_墨痕",
+  "clip": "jump",
+  "frames": 8,
+  "canvas_px": [
+    548,
+    792
+  ],
+  "pivot_px": [
+    274,
+    780
+  ],
+  "duration_ms": [
+    65,
+    45,
+    55,
+    70,
+    70,
+    55,
+    45,
+    80
+  ],
+  "loop": false,
+  "warnings": [
+    "frame 5: artwork touches cell edge"
+  ]
+}

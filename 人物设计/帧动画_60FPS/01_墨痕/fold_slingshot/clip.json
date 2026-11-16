@@ -1,0 +1,34 @@
+{
+  "clip": "fold_slingshot",
+  "character": "01_墨痕",
+  "fps": 60,
+  "canvas_px": [
+    512,
+    320
+  ],
+  "pivot_px": [
+    256,
+    320
+  ],
+  "loop": false,
+  "key_pose_frames_zero_based": [
+    0,
+    4,
+    9,
+    14,
+    16,
+    20
+  ],
+  "frames": 26,
+  "source": "fold_slingshot.png",
+  "redrawn_key_poses": false,
+  "readability_cuts_after_key_one_based": [
+    2
+  ],
+  "low_overlap_holds_after_key_one_based": [
+    4
+  ],
+  "source_warnings": [
+    "frame 3: artwork touches cell edge"
+  ]
+}

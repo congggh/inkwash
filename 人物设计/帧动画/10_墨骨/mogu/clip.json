@@ -1,0 +1,23 @@
+{
+  "character": "10_墨骨",
+  "clip": "mogu",
+  "frames": 6,
+  "canvas_px": [
+    536,
+    536
+  ],
+  "pivot_px": [
+    268,
+    524
+  ],
+  "duration_ms": [
+    240,
+    500,
+    150,
+    280,
+    230,
+    420
+  ],
+  "loop": false,
+  "warnings": []
+}

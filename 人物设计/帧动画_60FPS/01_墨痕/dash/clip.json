@@ -1,0 +1,35 @@
+{
+  "clip": "dash",
+  "character": "01_墨痕",
+  "fps": 60,
+  "canvas_px": [
+    512,
+    320
+  ],
+  "pivot_px": [
+    256,
+    320
+  ],
+  "loop": false,
+  "key_pose_frames_zero_based": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "frames": 11,
+  "source": "dash.png",
+  "redrawn_key_poses": true,
+  "readability_cuts_after_key_one_based": [],
+  "low_overlap_holds_after_key_one_based": [],
+  "source_warnings": [],
+  "gameplay": {
+    "duration_ms": 180,
+    "distance_m": 3.6,
+    "speed_m_s": 20,
+    "root_y_delta_m": 0,
+    "invulnerability_ms": 140
+  }
+}

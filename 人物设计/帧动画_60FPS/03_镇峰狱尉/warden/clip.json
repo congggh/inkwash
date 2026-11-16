@@ -1,0 +1,33 @@
+{
+  "clip": "warden",
+  "character": "03_镇峰狱尉",
+  "fps": 60,
+  "canvas_px": [
+    512,
+    320
+  ],
+  "pivot_px": [
+    256,
+    320
+  ],
+  "loop": false,
+  "key_pose_frames_zero_based": [
+    0,
+    14,
+    50,
+    74,
+    89,
+    106
+  ],
+  "frames": 122,
+  "source": "warden.png",
+  "redrawn_key_poses": false,
+  "readability_cuts_after_key_one_based": [
+    3,
+    4
+  ],
+  "low_overlap_holds_after_key_one_based": [],
+  "source_warnings": [
+    "frame 3: artwork touches cell edge"
+  ]
+}

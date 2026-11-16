@@ -1,0 +1,41 @@
+{
+  "clip": "slash_combo",
+  "character": "01_墨痕",
+  "fps": 60,
+  "canvas_px": [
+    512,
+    320
+  ],
+  "pivot_px": [
+    256,
+    320
+  ],
+  "loop": false,
+  "key_pose_frames_zero_based": [
+    0,
+    5,
+    12,
+    16,
+    22,
+    32,
+    40,
+    53
+  ],
+  "frames": 54,
+  "source": "slash_combo.png",
+  "redrawn_key_poses": true,
+  "readability_cuts_after_key_one_based": [],
+  "low_overlap_holds_after_key_one_based": [],
+  "source_warnings": [
+    "frame 2: artwork touches cell edge",
+    "frame 3: artwork touches cell edge",
+    "frame 6: artwork touches cell edge",
+    "frame 7: artwork touches cell edge",
+    "frame 8: artwork touches cell edge"
+  ],
+  "stage_frame_counts": [
+    16,
+    16,
+    22
+  ]
+}

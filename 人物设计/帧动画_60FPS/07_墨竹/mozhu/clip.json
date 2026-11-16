@@ -1,0 +1,35 @@
+{
+  "clip": "mozhu",
+  "character": "07_墨竹",
+  "fps": 60,
+  "canvas_px": [
+    512,
+    320
+  ],
+  "pivot_px": [
+    256,
+    320
+  ],
+  "loop": false,
+  "key_pose_frames_zero_based": [
+    0,
+    14,
+    41,
+    52,
+    66,
+    79
+  ],
+  "frames": 104,
+  "source": "mozhu.png",
+  "redrawn_key_poses": false,
+  "readability_cuts_after_key_one_based": [
+    2,
+    4
+  ],
+  "low_overlap_holds_after_key_one_based": [
+    4
+  ],
+  "source_warnings": [
+    "frame 3: artwork touches cell edge"
+  ]
+}

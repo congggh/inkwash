@@ -1,0 +1,30 @@
+{
+  "clip": "run",
+  "character": "01_墨痕",
+  "fps": 60,
+  "canvas_px": [
+    512,
+    320
+  ],
+  "pivot_px": [
+    256,
+    320
+  ],
+  "loop": true,
+  "key_pose_frames_zero_based": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28
+  ],
+  "frames": 32,
+  "source": "run.png",
+  "redrawn_key_poses": true,
+  "readability_cuts_after_key_one_based": [],
+  "low_overlap_holds_after_key_one_based": [],
+  "source_warnings": []
+}

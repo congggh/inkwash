@@ -1,0 +1,558 @@
+{
+  "missing": [],
+  "failed": {},
+  "clips": [
+    {
+      "character": "01_墨痕",
+      "clip": "idle",
+      "frames": 8,
+      "canvas_px": [
+        548,
+        792
+      ],
+      "pivot_px": [
+        274,
+        780
+      ],
+      "duration_ms": [
+        133,
+        133,
+        133,
+        133,
+        133,
+        133,
+        133,
+        133
+      ],
+      "loop": true,
+      "warnings": []
+    },
+    {
+      "character": "01_墨痕",
+      "clip": "run",
+      "frames": 8,
+      "canvas_px": [
+        548,
+        792
+      ],
+      "pivot_px": [
+        274,
+        780
+      ],
+      "duration_ms": [
+        67,
+        67,
+        67,
+        67,
+        67,
+        67,
+        67,
+        67
+      ],
+      "loop": true,
+      "warnings": []
+    },
+    {
+      "character": "01_墨痕",
+      "clip": "brake",
+      "frames": 4,
+      "canvas_px": [
+        548,
+        792
+      ],
+      "pivot_px": [
+        274,
+        780
+      ],
+      "duration_ms": [
+        67,
+        67,
+        67,
+        67
+      ],
+      "loop": false,
+      "warnings": [
+        "frame 3: artwork touches cell edge"
+      ]
+    },
+    {
+      "character": "01_墨痕",
+      "clip": "jump",
+      "frames": 8,
+      "canvas_px": [
+        548,
+        792
+      ],
+      "pivot_px": [
+        274,
+        780
+      ],
+      "duration_ms": [
+        65,
+        45,
+        55,
+        70,
+        70,
+        55,
+        45,
+        80
+      ],
+      "loop": false,
+      "warnings": [
+        "frame 5: artwork touches cell edge"
+      ]
+    },
+    {
+      "character": "01_墨痕",
+      "clip": "dash_ground_fluid",
+      "frames": 8,
+      "canvas_px": [
+        548,
+        792
+      ],
+      "pivot_px": [
+        274,
+        780
+      ],
+      "duration_ms": [
+        67,
+        50,
+        33,
+        17,
+        50,
+        33,
+        50,
+        83
+      ],
+      "loop": false,
+      "warnings": [
+        "frame 2: artwork touches cell edge",
+        "frame 3: artwork touches cell edge",
+        "frame 4: artwork touches cell edge",
+        "frame 5: artwork touches cell edge"
+      ]
+    },
+    {
+      "character": "01_墨痕",
+      "clip": "slash_combo",
+      "frames": 8,
+      "canvas_px": [
+        548,
+        792
+      ],
+      "pivot_px": [
+        274,
+        780
+      ],
+      "duration_ms": [
+        67,
+        83,
+        117,
+        84,
+        183,
+        117,
+        100,
+        150
+      ],
+      "loop": false,
+      "warnings": [
+        "frame 2: artwork touches cell edge",
+        "frame 3: artwork touches cell edge",
+        "frame 5: artwork touches cell edge"
+      ]
+    },
+    {
+      "character": "01_墨痕",
+      "clip": "pogo_rift",
+      "frames": 8,
+      "canvas_px": [
+        548,
+        792
+      ],
+      "pivot_px": [
+        274,
+        780
+      ],
+      "duration_ms": [
+        33,
+        100,
+        67,
+        50,
+        50,
+        67,
+        50,
+        80
+      ],
+      "loop": false,
+      "warnings": [
+        "frame 6: artwork touches cell edge"
+      ]
+    },
+    {
+      "character": "01_墨痕",
+      "clip": "fold_slingshot",
+      "frames": 6,
+      "canvas_px": [
+        548,
+        792
+      ],
+      "pivot_px": [
+        274,
+        780
+      ],
+      "duration_ms": [
+        67,
+        83,
+        90,
+        50,
+        67,
+        83
+      ],
+      "loop": false,
+      "warnings": [
+        "frame 3: artwork touches cell edge"
+      ]
+    },
+    {
+      "character": "01_墨痕",
+      "clip": "parry_ripout",
+      "frames": 8,
+      "canvas_px": [
+        548,
+        792
+      ],
+      "pivot_px": [
+        274,
+        780
+      ],
+      "duration_ms": [
+        33,
+        67,
+        260,
+        117,
+        50,
+        70,
+        60,
+        80
+      ],
+      "loop": false,
+      "warnings": []
+    },
+    {
+      "character": "01_墨痕",
+      "clip": "boss_finisher",
+      "frames": 8,
+      "canvas_px": [
+        548,
+        792
+      ],
+      "pivot_px": [
+        274,
+        780
+      ],
+      "duration_ms": [
+        65,
+        70,
+        50,
+        50,
+        50,
+        50,
+        320,
+        90
+      ],
+      "loop": false,
+      "warnings": [
+        "frame 3: artwork touches cell edge"
+      ]
+    },
+    {
+      "character": "02_盲眼巡卒",
+      "clip": "jailer",
+      "frames": 6,
+      "canvas_px": [
+        536,
+        536
+      ],
+      "pivot_px": [
+        268,
+        524
+      ],
+      "duration_ms": [
+        240,
+        120,
+        640,
+        120,
+        180,
+        240
+      ],
+      "loop": false,
+      "warnings": []
+    },
+    {
+      "character": "03_镇峰狱尉",
+      "clip": "warden",
+      "frames": 6,
+      "canvas_px": [
+        560,
+        536
+      ],
+      "pivot_px": [
+        280,
+        524
+      ],
+      "duration_ms": [
+        240,
+        600,
+        400,
+        260,
+        280,
+        260
+      ],
+      "loop": false,
+      "warnings": [
+        "frame 3: artwork touches cell edge"
+      ]
+    },
+    {
+      "character": "04_墨梅",
+      "clip": "momei",
+      "frames": 6,
+      "canvas_px": [
+        536,
+        536
+      ],
+      "pivot_px": [
+        268,
+        524
+      ],
+      "duration_ms": [
+        240,
+        220,
+        170,
+        240,
+        180,
+        420
+      ],
+      "loop": false,
+      "warnings": []
+    },
+    {
+      "character": "05_巡水工偶",
+      "clip": "laborer",
+      "frames": 6,
+      "canvas_px": [
+        536,
+        536
+      ],
+      "pivot_px": [
+        268,
+        524
+      ],
+      "duration_ms": [
+        240,
+        430,
+        170,
+        160,
+        150,
+        240
+      ],
+      "loop": false,
+      "warnings": [
+        "frame 1: artwork touches cell edge"
+      ]
+    },
+    {
+      "character": "06_伏波画督",
+      "clip": "magistrate",
+      "frames": 6,
+      "canvas_px": [
+        549,
+        536
+      ],
+      "pivot_px": [
+        274,
+        524
+      ],
+      "duration_ms": [
+        240,
+        400,
+        240,
+        160,
+        260,
+        280
+      ],
+      "loop": false,
+      "warnings": [
+        "frame 3: artwork touches cell edge",
+        "frame 6: artwork touches cell edge"
+      ]
+    },
+    {
+      "character": "07_墨竹",
+      "clip": "mozhu",
+      "frames": 6,
+      "canvas_px": [
+        557,
+        536
+      ],
+      "pivot_px": [
+        278,
+        524
+      ],
+      "duration_ms": [
+        240,
+        460,
+        170,
+        240,
+        230,
+        400
+      ],
+      "loop": false,
+      "warnings": [
+        "frame 3: artwork touches cell edge"
+      ]
+    },
+    {
+      "character": "08_守碑阴傀",
+      "clip": "shade",
+      "frames": 6,
+      "canvas_px": [
+        536,
+        536
+      ],
+      "pivot_px": [
+        268,
+        524
+      ],
+      "duration_ms": [
+        240,
+        180,
+        700,
+        150,
+        230,
+        360
+      ],
+      "loop": false,
+      "warnings": []
+    },
+    {
+      "character": "09_司弦刑官",
+      "clip": "inquisitor",
+      "frames": 6,
+      "canvas_px": [
+        550,
+        540
+      ],
+      "pivot_px": [
+        275,
+        528
+      ],
+      "duration_ms": [
+        240,
+        500,
+        100,
+        230,
+        260,
+        300
+      ],
+      "loop": false,
+      "warnings": [
+        "frame 3: artwork touches cell edge",
+        "frame 4: artwork touches cell edge",
+        "frame 6: artwork touches cell edge"
+      ]
+    },
+    {
+      "character": "10_墨骨",
+      "clip": "mogu",
+      "frames": 6,
+      "canvas_px": [
+        536,
+        536
+      ],
+      "pivot_px": [
+        268,
+        524
+      ],
+      "duration_ms": [
+        240,
+        500,
+        150,
+        280,
+        230,
+        420
+      ],
+      "loop": false,
+      "warnings": []
+    },
+    {
+      "character": "11_去色司祝",
+      "clip": "deacon",
+      "frames": 6,
+      "canvas_px": [
+        536,
+        536
+      ],
+      "pivot_px": [
+        268,
+        524
+      ],
+      "duration_ms": [
+        240,
+        150,
+        560,
+        170,
+        230,
+        300
+      ],
+      "loop": false,
+      "warnings": []
+    },
+    {
+      "character": "12_平规衡司",
+      "clip": "praetor",
+      "frames": 6,
+      "canvas_px": [
+        536,
+        536
+      ],
+      "pivot_px": [
+        268,
+        524
+      ],
+      "duration_ms": [
+        240,
+        260,
+        220,
+        220,
+        260,
+        300
+      ],
+      "loop": false,
+      "warnings": []
+    },
+    {
+      "character": "13_顾狂墨",
+      "clip": "gukuangmo",
+      "frames": 6,
+      "canvas_px": [
+        536,
+        536
+      ],
+      "pivot_px": [
+        268,
+        524
+      ],
+      "duration_ms": [
+        260,
+        200,
+        220,
+        200,
+        260,
+        420
+      ],
+      "loop": false,
+      "warnings": []
+    }
+  ]
+}

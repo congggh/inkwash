@@ -1,0 +1,25 @@
+{
+  "character": "01_墨痕",
+  "clip": "fold_slingshot",
+  "frames": 6,
+  "canvas_px": [
+    548,
+    792
+  ],
+  "pivot_px": [
+    274,
+    780
+  ],
+  "duration_ms": [
+    67,
+    83,
+    90,
+    50,
+    67,
+    83
+  ],
+  "loop": false,
+  "warnings": [
+    "frame 3: artwork touches cell edge"
+  ]
+}

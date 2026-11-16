@@ -1,0 +1,36 @@
+{
+  "clip": "pogo_rift",
+  "character": "01_墨痕",
+  "fps": 60,
+  "canvas_px": [
+    512,
+    320
+  ],
+  "pivot_px": [
+    256,
+    320
+  ],
+  "loop": false,
+  "key_pose_frames_zero_based": [
+    0,
+    2,
+    8,
+    12,
+    15,
+    18,
+    21,
+    24
+  ],
+  "frames": 30,
+  "source": "pogo_rift.png",
+  "redrawn_key_poses": false,
+  "readability_cuts_after_key_one_based": [
+    2,
+    4,
+    5
+  ],
+  "low_overlap_holds_after_key_one_based": [],
+  "source_warnings": [
+    "frame 6: artwork touches cell edge"
+  ]
+}

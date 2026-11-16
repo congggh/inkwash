@@ -1,0 +1,34 @@
+{
+  "clip": "inquisitor",
+  "character": "09_司弦刑官",
+  "fps": 60,
+  "canvas_px": [
+    512,
+    320
+  ],
+  "pivot_px": [
+    256,
+    320
+  ],
+  "loop": false,
+  "key_pose_frames_zero_based": [
+    0,
+    14,
+    44,
+    50,
+    64,
+    79
+  ],
+  "frames": 98,
+  "source": "inquisitor.png",
+  "redrawn_key_poses": false,
+  "readability_cuts_after_key_one_based": [
+    4
+  ],
+  "low_overlap_holds_after_key_one_based": [],
+  "source_warnings": [
+    "frame 3: artwork touches cell edge",
+    "frame 4: artwork touches cell edge",
+    "frame 6: artwork touches cell edge"
+  ]
+}

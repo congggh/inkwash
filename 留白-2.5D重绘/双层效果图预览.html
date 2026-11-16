@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>留白 · 2.5D 双层场景</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#1c1a17;color:#f0eadd;font:16px/1.5 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1700px;margin:auto;padding:1.2rem 2vw}h1{font-size:1.45rem;margin:0 0 .65rem}nav,footer{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin:.7rem 0}button,select,a{font:inherit;padding:.42rem .65rem;color:inherit;background:#302b24;border:1px solid #73624b;border-radius:.35rem;text-decoration:none}button{cursor:pointer}button[aria-pressed=true]{color:#292016;background:#e0cfad}button:disabled{opacity:.35;cursor:default}.stage{background:#141310;position:relative;min-height:100px}.stage img{width:100%;display:block}.stage img[hidden]{display:none}#unavailable{padding:2rem}#status{color:#c6b8a3}select{max-width:96vw}
+</style></head><body><main>
+<h1>留白 · 2.5D 双层场景</h1>
+<nav><button id="prev" aria-label="上一幕">←</button><select id="scene" aria-label="选择一幕"></select><button id="next" aria-label="下一幕">→</button><button id="out" aria-pressed="true">表层</button><button id="in" aria-pressed="false">里层</button><span id="status"></span></nav>
+<div class="stage"><img id="art" alt=""><div id="unavailable" hidden>这一层暂未导出。</div></div>
+<footer><a id="original" target="_blank" rel="noopener">打开 PNG</a></footer>
+</main><script src="场景索引.js"></script><script>
+const $=id=>document.getElementById(id)
+const select=$('scene'),art=$('art'),original=$('original')
+let side='out'
+const titles=['序章','第一章','第二章','第三章','尾声']
+for(let chapter=0;chapter<titles.length;chapter++){
+  const group=document.createElement('optgroup')
+  group.label=titles[chapter]
+  for(const [i,item] of scenes.entries()){
+    if(item.c!==chapter)continue
+    const option=document.createElement('option')
+    option.value=i
+    option.textContent=item.id+' · '+item.name
+    group.append(option)
+  }
+  select.append(group)
+}
+function draw(){
+  const i=+select.value,item=scenes[i],available=!!item[side]
+  $('prev').disabled=i===0
+  $('next').disabled=i===scenes.length-1
+  $('status').textContent=(i+1)+' / '+scenes.length
+  for(const layer of ['out','in'])$(layer).setAttribute('aria-pressed',layer===side)
+  $('unavailable').hidden=available
+  art.hidden=!available
+  original.hidden=!available
+  if(available){
+    const url=item[side].split('/').map(encodeURIComponent).join('/')
+    art.alt=item.id+' '+item.name+' · '+(side==='out'?'表层规矩浓墨实景':'里层白描宣纸底稿')
+    art.src=url
+    original.href=url
+  }
+}
+function step(amount){
+  select.value=Math.max(0,Math.min(scenes.length-1,+select.value+amount))
+  draw()
+}
+select.onchange=draw
+$('prev').onclick=()=>step(-1)
+$('next').onclick=()=>step(1)
+for(const layer of ['out','in'])$(layer).onclick=()=>{side=layer;draw()}
+document.addEventListener('keydown',event=>{
+  if(event.target===select)return
+  if(event.key==='ArrowLeft')step(-1)
+  if(event.key==='ArrowRight')step(1)
+})
+draw()
+</script></body></html>

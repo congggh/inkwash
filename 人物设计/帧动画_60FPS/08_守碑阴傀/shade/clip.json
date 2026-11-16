@@ -1,0 +1,30 @@
+{
+  "clip": "shade",
+  "character": "08_守碑阴傀",
+  "fps": 60,
+  "canvas_px": [
+    512,
+    320
+  ],
+  "pivot_px": [
+    256,
+    320
+  ],
+  "loop": false,
+  "key_pose_frames_zero_based": [
+    0,
+    14,
+    25,
+    67,
+    76,
+    90
+  ],
+  "frames": 112,
+  "source": "shade.png",
+  "redrawn_key_poses": false,
+  "readability_cuts_after_key_one_based": [
+    4
+  ],
+  "low_overlap_holds_after_key_one_based": [],
+  "source_warnings": []
+}
