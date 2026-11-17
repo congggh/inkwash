@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《留白》序章动作帧 · 120FPS 预览</title>
+<style>
+  :root { --bg:#141414; --card:#1f1f1f; --ink:#e8e2d0; --sub:#9a917c; --fps:#c3272b; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family:"Microsoft YaHei",system-ui,sans-serif; }
+  header { padding:28px 24px 8px; border-bottom:1px solid #2a2a2a; }
+  header h1 { margin:0; font-size:22px; }
+  header p { color:var(--sub); margin:8px 0 0; font-size:13px; }
+  .wrap { max-width:1200px; margin:0 auto; padding:8px 20px 60px; }
+  section h2 { margin:26px 0 2px; font-size:18px; }
+  section .sub { color:var(--sub); margin:0 0 14px; font-size:12px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:14px; }
+  .card { background:var(--card); border-radius:10px; overflow:hidden;
+          border:1px solid #2c2c2c; transition:border .15s; }
+  .card:hover { border-color:#5a5a5a; }
+  .card canvas { display:block; width:100%; height:auto; background:#e0e0e0; cursor:pointer; }
+  .card .meta { padding:8px 10px; display:flex; flex-direction:column; gap:2px; font-size:12px; }
+  .card .meta b { font-size:13px; }
+  .card .meta span { color:var(--sub); }
+  .card .meta .fps { color:var(--fps); font-weight:600; }
+  .legend { color:var(--sub); font-size:12px; margin:14px 0 0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap" style="padding-top:0">
+    <h1>《留白》(Ink &amp; Void) · 序章动作帧动画</h1>
+    <p>帧率：<b style="color:var(--fps)">120 FPS</b>（原文件 60 FPS 的两倍）· 点击画布播放 / 暂停 ·
+       浏览器为 60Hz 显示器时会以 60fps 呈现，Unity 内为真实 120 FPS。</p>
+  </div>
+</header>
+<div class="wrap">
+  <section>
+    <h2>主角【墨痕】</h2>
+    <p class="sub">512×320 px · 画布底部中心锚点</p>
+    <div class="grid">
+        <div class="card">
+          <canvas id="cv_MoHen_Idle" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Idle</b><span>16 帧 · 1067ms · 循环</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_Idle', ['../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_000.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_001.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_002.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_003.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_004.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_005.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_006.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_007.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_008.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_009.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_010.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_011.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_012.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_013.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_014.png','../Assets/InkWash_Animations/MoHen/Sprites/Idle/Idle_015.png'], 66.67, true);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_Run" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Run</b><span>16 帧 · 533ms · 循环</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_Run', ['../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_000.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_001.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_002.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_003.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_004.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_005.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_006.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_007.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_008.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_009.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_010.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_011.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_012.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_013.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_014.png','../Assets/InkWash_Animations/MoHen/Sprites/Run/Run_015.png'], 33.33, true);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_Turn" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Turn</b><span>7 帧 · 292ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_Turn', ['../Assets/InkWash_Animations/MoHen/Sprites/Turn/Turn_000.png','../Assets/InkWash_Animations/MoHen/Sprites/Turn/Turn_001.png','../Assets/InkWash_Animations/MoHen/Sprites/Turn/Turn_002.png','../Assets/InkWash_Animations/MoHen/Sprites/Turn/Turn_003.png','../Assets/InkWash_Animations/MoHen/Sprites/Turn/Turn_004.png','../Assets/InkWash_Animations/MoHen/Sprites/Turn/Turn_005.png','../Assets/InkWash_Animations/MoHen/Sprites/Turn/Turn_006.png'], 41.67, false);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_Jump" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Jump</b><span>25 帧 · 833ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_Jump', ['../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_000.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_001.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_002.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_003.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_004.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_005.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_006.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_007.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_008.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_009.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_010.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_011.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_012.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_013.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_014.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_015.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_016.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_017.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_018.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_019.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_020.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_021.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_022.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_023.png','../Assets/InkWash_Animations/MoHen/Sprites/Jump/Jump_024.png'], 33.33, false);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_Dash" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Dash</b><span>11 帧 · 183ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_Dash', ['../Assets/InkWash_Animations/MoHen/Sprites/Dash/Dash_000.png','../Assets/InkWash_Animations/MoHen/Sprites/Dash/Dash_001.png','../Assets/InkWash_Animations/MoHen/Sprites/Dash/Dash_002.png','../Assets/InkWash_Animations/MoHen/Sprites/Dash/Dash_003.png','../Assets/InkWash_Animations/MoHen/Sprites/Dash/Dash_004.png','../Assets/InkWash_Animations/MoHen/Sprites/Dash/Dash_005.png','../Assets/InkWash_Animations/MoHen/Sprites/Dash/Dash_006.png','../Assets/InkWash_Animations/MoHen/Sprites/Dash/Dash_007.png','../Assets/InkWash_Animations/MoHen/Sprites/Dash/Dash_008.png','../Assets/InkWash_Animations/MoHen/Sprites/Dash/Dash_009.png','../Assets/InkWash_Animations/MoHen/Sprites/Dash/Dash_010.png'], 16.67, false);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_RiftGrind" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>RiftGrind</b><span>11 帧 · 183ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_RiftGrind', ['../Assets/InkWash_Animations/MoHen/Sprites/RiftGrind/RiftGrind_000.png','../Assets/InkWash_Animations/MoHen/Sprites/RiftGrind/RiftGrind_001.png','../Assets/InkWash_Animations/MoHen/Sprites/RiftGrind/RiftGrind_002.png','../Assets/InkWash_Animations/MoHen/Sprites/RiftGrind/RiftGrind_003.png','../Assets/InkWash_Animations/MoHen/Sprites/RiftGrind/RiftGrind_004.png','../Assets/InkWash_Animations/MoHen/Sprites/RiftGrind/RiftGrind_005.png','../Assets/InkWash_Animations/MoHen/Sprites/RiftGrind/RiftGrind_006.png','../Assets/InkWash_Animations/MoHen/Sprites/RiftGrind/RiftGrind_007.png','../Assets/InkWash_Animations/MoHen/Sprites/RiftGrind/RiftGrind_008.png','../Assets/InkWash_Animations/MoHen/Sprites/RiftGrind/RiftGrind_009.png','../Assets/InkWash_Animations/MoHen/Sprites/RiftGrind/RiftGrind_010.png'], 16.67, false);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_Slash1" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Slash1</b><span>31 帧 · 258ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_Slash1', ['../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_000.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_001.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_002.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_003.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_004.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_005.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_006.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_007.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_008.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_009.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_010.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_011.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_012.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_013.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_014.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_015.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_016.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_017.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_018.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_019.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_020.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_021.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_022.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_023.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_024.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_025.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_026.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_027.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_028.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_029.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash1/Slash1_030.png'], 8.33, false);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_Slash2" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Slash2</b><span>31 帧 · 258ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_Slash2', ['../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_000.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_001.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_002.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_003.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_004.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_005.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_006.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_007.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_008.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_009.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_010.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_011.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_012.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_013.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_014.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_015.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_016.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_017.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_018.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_019.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_020.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_021.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_022.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_023.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_024.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_025.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_026.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_027.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_028.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_029.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash2/Slash2_030.png'], 8.33, false);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_Slash3" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Slash3</b><span>43 帧 · 358ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_Slash3', ['../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_000.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_001.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_002.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_003.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_004.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_005.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_006.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_007.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_008.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_009.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_010.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_011.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_012.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_013.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_014.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_015.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_016.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_017.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_018.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_019.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_020.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_021.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_022.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_023.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_024.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_025.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_026.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_027.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_028.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_029.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_030.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_031.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_032.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_033.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_034.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_035.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_036.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_037.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_038.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_039.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_040.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_041.png','../Assets/InkWash_Animations/MoHen/Sprites/Slash3/Slash3_042.png'], 8.33, false);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_Pogo" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Pogo</b><span>23 帧 · 192ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_Pogo', ['../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_000.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_001.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_002.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_003.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_004.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_005.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_006.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_007.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_008.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_009.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_010.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_011.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_012.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_013.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_014.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_015.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_016.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_017.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_018.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_019.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_020.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_021.png','../Assets/InkWash_Animations/MoHen/Sprites/Pogo/Pogo_022.png'], 8.33, false);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_Fold" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Fold</b><span>27 帧 · 225ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_Fold', ['../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_000.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_001.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_002.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_003.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_004.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_005.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_006.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_007.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_008.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_009.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_010.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_011.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_012.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_013.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_014.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_015.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_016.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_017.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_018.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_019.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_020.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_021.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_022.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_023.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_024.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_025.png','../Assets/InkWash_Animations/MoHen/Sprites/Fold/Fold_026.png'], 8.33, false);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_Slingshot" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Slingshot</b><span>23 帧 · 192ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_Slingshot', ['../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_000.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_001.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_002.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_003.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_004.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_005.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_006.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_007.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_008.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_009.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_010.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_011.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_012.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_013.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_014.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_015.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_016.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_017.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_018.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_019.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_020.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_021.png','../Assets/InkWash_Animations/MoHen/Sprites/Slingshot/Slingshot_022.png'], 8.33, false);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_Parry" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Parry</b><span>27 帧 · 450ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_Parry', ['../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_000.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_001.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_002.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_003.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_004.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_005.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_006.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_007.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_008.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_009.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_010.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_011.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_012.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_013.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_014.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_015.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_016.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_017.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_018.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_019.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_020.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_021.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_022.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_023.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_024.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_025.png','../Assets/InkWash_Animations/MoHen/Sprites/Parry/Parry_026.png'], 16.67, false);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_Finisher" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Finisher</b><span>19 帧 · 158ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_Finisher', ['../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_000.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_001.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_002.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_003.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_004.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_005.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_006.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_007.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_008.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_009.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_010.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_011.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_012.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_013.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_014.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_015.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_016.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_017.png','../Assets/InkWash_Animations/MoHen/Sprites/Finisher/Finisher_018.png'], 8.33, false);
+</script>
+        <div class="card">
+          <canvas id="cv_MoHen_BossFinisher" width="512" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>BossFinisher</b><span>31 帧 · 517ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoHen_BossFinisher', ['../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_000.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_001.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_002.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_003.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_004.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_005.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_006.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_007.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_008.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_009.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_010.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_011.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_012.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_013.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_014.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_015.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_016.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_017.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_018.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_019.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_020.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_021.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_022.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_023.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_024.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_025.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_026.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_027.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_028.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_029.png','../Assets/InkWash_Animations/MoHen/Sprites/BossFinisher/BossFinisher_030.png'], 16.67, false);
+</script>
+    </div>
+  </section>  <section>
+    <h2>序章杂兵【盲眼巡卒】</h2>
+    <p class="sub">320×320 px · 画布底部中心锚点</p>
+    <div class="grid">
+        <div class="card">
+          <canvas id="cv_BlindPatrol_Idle" width="320" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Idle</b><span>8 帧 · 800ms · 循环</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_BlindPatrol_Idle', ['../Assets/InkWash_Animations/BlindPatrol/Sprites/Idle/Idle_000.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Idle/Idle_001.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Idle/Idle_002.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Idle/Idle_003.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Idle/Idle_004.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Idle/Idle_005.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Idle/Idle_006.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Idle/Idle_007.png'], 100.00, true);
+</script>
+        <div class="card">
+          <canvas id="cv_BlindPatrol_Patrol" width="320" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Patrol</b><span>12 帧 · 600ms · 循环</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_BlindPatrol_Patrol', ['../Assets/InkWash_Animations/BlindPatrol/Sprites/Patrol/Patrol_000.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Patrol/Patrol_001.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Patrol/Patrol_002.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Patrol/Patrol_003.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Patrol/Patrol_004.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Patrol/Patrol_005.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Patrol/Patrol_006.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Patrol/Patrol_007.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Patrol/Patrol_008.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Patrol/Patrol_009.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Patrol/Patrol_010.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Patrol/Patrol_011.png'], 50.00, true);
+</script>
+        <div class="card">
+          <canvas id="cv_BlindPatrol_Chase" width="320" height="320" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Chase</b><span>12 帧 · 600ms · 循环</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_BlindPatrol_Chase', ['../Assets/InkWash_Animations/BlindPatrol/Sprites/Chase/Chase_000.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Chase/Chase_001.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Chase/Chase_002.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Chase/Chase_003.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Chase/Chase_004.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Chase/Chase_005.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Chase/Chase_006.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Chase/Chase_007.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Chase/Chase_008.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Chase/Chase_009.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Chase/Chase_010.png','../Assets/InkWash_Animations/BlindPatrol/Sprites/Chase/Chase_011.png'], 50.00, true);
+</script>
+    </div>
+  </section>  <section>
+    <h2>序章精英【镇峰狱尉】</h2>
+    <p class="sub">448×384 px · 画布底部中心锚点</p>
+    <div class="grid">
+        <div class="card">
+          <canvas id="cv_PeakWarden_Idle" width="448" height="384" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Idle</b><span>8 帧 · 800ms · 循环</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_PeakWarden_Idle', ['../Assets/InkWash_Animations/PeakWarden/Sprites/Idle/Idle_000.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Idle/Idle_001.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Idle/Idle_002.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Idle/Idle_003.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Idle/Idle_004.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Idle/Idle_005.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Idle/Idle_006.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Idle/Idle_007.png'], 100.00, true);
+</script>
+        <div class="card">
+          <canvas id="cv_PeakWarden_Move" width="448" height="384" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Move</b><span>12 帧 · 800ms · 循环</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_PeakWarden_Move', ['../Assets/InkWash_Animations/PeakWarden/Sprites/Move/Move_000.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Move/Move_001.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Move/Move_002.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Move/Move_003.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Move/Move_004.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Move/Move_005.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Move/Move_006.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Move/Move_007.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Move/Move_008.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Move/Move_009.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Move/Move_010.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Move/Move_011.png'], 66.67, true);
+</script>
+        <div class="card">
+          <canvas id="cv_PeakWarden_Combat" width="448" height="384" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Combat</b><span>11 帧 · 642ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_PeakWarden_Combat', ['../Assets/InkWash_Animations/PeakWarden/Sprites/Combat/Combat_000.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Combat/Combat_001.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Combat/Combat_002.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Combat/Combat_003.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Combat/Combat_004.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Combat/Combat_005.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Combat/Combat_006.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Combat/Combat_007.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Combat/Combat_008.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Combat/Combat_009.png','../Assets/InkWash_Animations/PeakWarden/Sprites/Combat/Combat_010.png'], 58.33, false);
+</script>
+    </div>
+  </section>  <section>
+    <h2>序章Boss【先锋镇将·墨梅】</h2>
+    <p class="sub">512×448 px · 画布底部中心锚点</p>
+    <div class="grid">
+        <div class="card">
+          <canvas id="cv_MoMei_Idle" width="512" height="448" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Idle</b><span>8 帧 · 800ms · 循环</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoMei_Idle', ['../Assets/InkWash_Animations/MoMei/Sprites/Idle/Idle_000.png','../Assets/InkWash_Animations/MoMei/Sprites/Idle/Idle_001.png','../Assets/InkWash_Animations/MoMei/Sprites/Idle/Idle_002.png','../Assets/InkWash_Animations/MoMei/Sprites/Idle/Idle_003.png','../Assets/InkWash_Animations/MoMei/Sprites/Idle/Idle_004.png','../Assets/InkWash_Animations/MoMei/Sprites/Idle/Idle_005.png','../Assets/InkWash_Animations/MoMei/Sprites/Idle/Idle_006.png','../Assets/InkWash_Animations/MoMei/Sprites/Idle/Idle_007.png'], 100.00, true);
+</script>
+        <div class="card">
+          <canvas id="cv_MoMei_Glide" width="512" height="448" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Glide</b><span>12 帧 · 600ms · 循环</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoMei_Glide', ['../Assets/InkWash_Animations/MoMei/Sprites/Glide/Glide_000.png','../Assets/InkWash_Animations/MoMei/Sprites/Glide/Glide_001.png','../Assets/InkWash_Animations/MoMei/Sprites/Glide/Glide_002.png','../Assets/InkWash_Animations/MoMei/Sprites/Glide/Glide_003.png','../Assets/InkWash_Animations/MoMei/Sprites/Glide/Glide_004.png','../Assets/InkWash_Animations/MoMei/Sprites/Glide/Glide_005.png','../Assets/InkWash_Animations/MoMei/Sprites/Glide/Glide_006.png','../Assets/InkWash_Animations/MoMei/Sprites/Glide/Glide_007.png','../Assets/InkWash_Animations/MoMei/Sprites/Glide/Glide_008.png','../Assets/InkWash_Animations/MoMei/Sprites/Glide/Glide_009.png','../Assets/InkWash_Animations/MoMei/Sprites/Glide/Glide_010.png','../Assets/InkWash_Animations/MoMei/Sprites/Glide/Glide_011.png'], 50.00, true);
+</script>
+        <div class="card">
+          <canvas id="cv_MoMei_Rush" width="512" height="448" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Rush</b><span>12 帧 · 500ms · 循环</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoMei_Rush', ['../Assets/InkWash_Animations/MoMei/Sprites/Rush/Rush_000.png','../Assets/InkWash_Animations/MoMei/Sprites/Rush/Rush_001.png','../Assets/InkWash_Animations/MoMei/Sprites/Rush/Rush_002.png','../Assets/InkWash_Animations/MoMei/Sprites/Rush/Rush_003.png','../Assets/InkWash_Animations/MoMei/Sprites/Rush/Rush_004.png','../Assets/InkWash_Animations/MoMei/Sprites/Rush/Rush_005.png','../Assets/InkWash_Animations/MoMei/Sprites/Rush/Rush_006.png','../Assets/InkWash_Animations/MoMei/Sprites/Rush/Rush_007.png','../Assets/InkWash_Animations/MoMei/Sprites/Rush/Rush_008.png','../Assets/InkWash_Animations/MoMei/Sprites/Rush/Rush_009.png','../Assets/InkWash_Animations/MoMei/Sprites/Rush/Rush_010.png','../Assets/InkWash_Animations/MoMei/Sprites/Rush/Rush_011.png'], 41.67, true);
+</script>
+        <div class="card">
+          <canvas id="cv_MoMei_Kneel" width="512" height="448" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Kneel</b><span>8 帧 · 800ms · 循环</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoMei_Kneel', ['../Assets/InkWash_Animations/MoMei/Sprites/Kneel/Kneel_000.png','../Assets/InkWash_Animations/MoMei/Sprites/Kneel/Kneel_001.png','../Assets/InkWash_Animations/MoMei/Sprites/Kneel/Kneel_002.png','../Assets/InkWash_Animations/MoMei/Sprites/Kneel/Kneel_003.png','../Assets/InkWash_Animations/MoMei/Sprites/Kneel/Kneel_004.png','../Assets/InkWash_Animations/MoMei/Sprites/Kneel/Kneel_005.png','../Assets/InkWash_Animations/MoMei/Sprites/Kneel/Kneel_006.png','../Assets/InkWash_Animations/MoMei/Sprites/Kneel/Kneel_007.png'], 100.00, true);
+</script>
+        <div class="card">
+          <canvas id="cv_MoMei_Combat" width="512" height="448" title="点击播放/暂停"></canvas>
+          <div class="meta"><b>Combat</b><span>13 帧 · 867ms</span><span class="fps">120 FPS</span></div>
+        </div><script>
+  makePlayer('cv_MoMei_Combat', ['../Assets/InkWash_Animations/MoMei/Sprites/Combat/Combat_000.png','../Assets/InkWash_Animations/MoMei/Sprites/Combat/Combat_001.png','../Assets/InkWash_Animations/MoMei/Sprites/Combat/Combat_002.png','../Assets/InkWash_Animations/MoMei/Sprites/Combat/Combat_003.png','../Assets/InkWash_Animations/MoMei/Sprites/Combat/Combat_004.png','../Assets/InkWash_Animations/MoMei/Sprites/Combat/Combat_005.png','../Assets/InkWash_Animations/MoMei/Sprites/Combat/Combat_006.png','../Assets/InkWash_Animations/MoMei/Sprites/Combat/Combat_007.png','../Assets/InkWash_Animations/MoMei/Sprites/Combat/Combat_008.png','../Assets/InkWash_Animations/MoMei/Sprites/Combat/Combat_009.png','../Assets/InkWash_Animations/MoMei/Sprites/Combat/Combat_010.png','../Assets/InkWash_Animations/MoMei/Sprites/Combat/Combat_011.png','../Assets/InkWash_Animations/MoMei/Sprites/Combat/Combat_012.png'], 66.67, false);
+</script>
+    </div>
+  </section>
+  <p class="legend">说明：帧图为程序化水墨占位帧（用于时序与 pose 参考），正式美术可用 act_prompt.md 内的 AI 生图 Prompt 同名替换。</p>
+</div>
+<script>
+function makePlayer(id, srcs, frameMs, loop) {
+  var c = document.getElementById(id);
+  var ctx = c.getContext('2d');
+  var imgs = srcs.map(function(s){ var im=new Image(); im.src=s; return im; });
+  var idx = 0, playing = false, acc = 0, last = 0, ready = 0;
+  imgs.forEach(function(im, i){
+    im.onload = function(){ ready++; if (i === 0) draw(0); };
+  });
+  function draw(i){ ctx.clearRect(0,0,c.width,c.height); ctx.drawImage(imgs[i],0,0); }
+  function tick(ts){
+    if (!playing) return;
+    if (!last) last = ts;
+    acc += ts - last; last = ts;
+    while (acc >= frameMs) {
+      acc -= frameMs; idx++;
+      if (idx >= imgs.length) { if (loop) idx = 0; else { idx = imgs.length-1; playing=false; break; } }
+    }
+    draw(idx);
+    requestAnimationFrame(tick);
+  }
+  c.addEventListener('click', function(){
+    playing = !playing; last = 0;
+    if (playing) requestAnimationFrame(tick);
+  });
+}
+</script>
+</body>
+</html>

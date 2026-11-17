@@ -9,3 +9,7 @@
 *.mov
 *.pyc
 __pycache__/
+
+# 图片伴生的 Unity .meta 文件随图片一起排除（避免孤立的 guid 引用）
+*.png.meta
+*.gif.meta

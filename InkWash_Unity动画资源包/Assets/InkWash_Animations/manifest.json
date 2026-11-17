@@ -1,0 +1,239 @@
+{
+  "sampleRate": 120,
+  "animations": [
+    {
+      "character": "MoHen",
+      "name": "Idle",
+      "loop": true,
+      "frameCount": 16,
+      "perFrameMs": 66.67,
+      "durationMs": 1066.67,
+      "sourceFrames": 8
+    },
+    {
+      "character": "MoHen",
+      "name": "Run",
+      "loop": true,
+      "frameCount": 16,
+      "perFrameMs": 33.33,
+      "durationMs": 533.33,
+      "sourceFrames": 8
+    },
+    {
+      "character": "MoHen",
+      "name": "Turn",
+      "loop": false,
+      "frameCount": 7,
+      "perFrameMs": 41.67,
+      "durationMs": 291.67,
+      "sourceFrames": 4
+    },
+    {
+      "character": "MoHen",
+      "name": "Jump",
+      "loop": false,
+      "frameCount": 25,
+      "perFrameMs": 33.33,
+      "durationMs": 833.33,
+      "sourceFrames": 13
+    },
+    {
+      "character": "MoHen",
+      "name": "Dash",
+      "loop": false,
+      "frameCount": 11,
+      "perFrameMs": 16.67,
+      "durationMs": 183.33,
+      "sourceFrames": 6
+    },
+    {
+      "character": "MoHen",
+      "name": "RiftGrind",
+      "loop": false,
+      "frameCount": 11,
+      "perFrameMs": 16.67,
+      "durationMs": 183.33,
+      "sourceFrames": 6
+    },
+    {
+      "character": "MoHen",
+      "name": "Slash1",
+      "loop": false,
+      "frameCount": 31,
+      "perFrameMs": 8.33,
+      "durationMs": 258.33,
+      "sourceFrames": 16
+    },
+    {
+      "character": "MoHen",
+      "name": "Slash2",
+      "loop": false,
+      "frameCount": 31,
+      "perFrameMs": 8.33,
+      "durationMs": 258.33,
+      "sourceFrames": 16
+    },
+    {
+      "character": "MoHen",
+      "name": "Slash3",
+      "loop": false,
+      "frameCount": 43,
+      "perFrameMs": 8.33,
+      "durationMs": 358.33,
+      "sourceFrames": 22
+    },
+    {
+      "character": "MoHen",
+      "name": "Pogo",
+      "loop": false,
+      "frameCount": 23,
+      "perFrameMs": 8.33,
+      "durationMs": 191.67,
+      "sourceFrames": 12
+    },
+    {
+      "character": "MoHen",
+      "name": "Fold",
+      "loop": false,
+      "frameCount": 27,
+      "perFrameMs": 8.33,
+      "durationMs": 225.0,
+      "sourceFrames": 14
+    },
+    {
+      "character": "MoHen",
+      "name": "Slingshot",
+      "loop": false,
+      "frameCount": 23,
+      "perFrameMs": 8.33,
+      "durationMs": 191.67,
+      "sourceFrames": 12
+    },
+    {
+      "character": "MoHen",
+      "name": "Parry",
+      "loop": false,
+      "frameCount": 27,
+      "perFrameMs": 16.67,
+      "durationMs": 450.0,
+      "sourceFrames": 14
+    },
+    {
+      "character": "MoHen",
+      "name": "Finisher",
+      "loop": false,
+      "frameCount": 19,
+      "perFrameMs": 8.33,
+      "durationMs": 158.33,
+      "sourceFrames": 10
+    },
+    {
+      "character": "MoHen",
+      "name": "BossFinisher",
+      "loop": false,
+      "frameCount": 31,
+      "perFrameMs": 16.67,
+      "durationMs": 516.67,
+      "sourceFrames": 16
+    },
+    {
+      "character": "BlindPatrol",
+      "name": "Idle",
+      "loop": true,
+      "frameCount": 8,
+      "perFrameMs": 100.0,
+      "durationMs": 800.0,
+      "sourceFrames": 4
+    },
+    {
+      "character": "BlindPatrol",
+      "name": "Patrol",
+      "loop": true,
+      "frameCount": 12,
+      "perFrameMs": 50.0,
+      "durationMs": 600.0,
+      "sourceFrames": 6
+    },
+    {
+      "character": "BlindPatrol",
+      "name": "Chase",
+      "loop": true,
+      "frameCount": 12,
+      "perFrameMs": 50.0,
+      "durationMs": 600.0,
+      "sourceFrames": 6
+    },
+    {
+      "character": "PeakWarden",
+      "name": "Idle",
+      "loop": true,
+      "frameCount": 8,
+      "perFrameMs": 100.0,
+      "durationMs": 800.0,
+      "sourceFrames": 4
+    },
+    {
+      "character": "PeakWarden",
+      "name": "Move",
+      "loop": true,
+      "frameCount": 12,
+      "perFrameMs": 66.67,
+      "durationMs": 800.0,
+      "sourceFrames": 6
+    },
+    {
+      "character": "PeakWarden",
+      "name": "Combat",
+      "loop": false,
+      "frameCount": 11,
+      "perFrameMs": 58.33,
+      "durationMs": 641.67,
+      "sourceFrames": 6
+    },
+    {
+      "character": "MoMei",
+      "name": "Idle",
+      "loop": true,
+      "frameCount": 8,
+      "perFrameMs": 100.0,
+      "durationMs": 800.0,
+      "sourceFrames": 4
+    },
+    {
+      "character": "MoMei",
+      "name": "Glide",
+      "loop": true,
+      "frameCount": 12,
+      "perFrameMs": 50.0,
+      "durationMs": 600.0,
+      "sourceFrames": 6
+    },
+    {
+      "character": "MoMei",
+      "name": "Rush",
+      "loop": true,
+      "frameCount": 12,
+      "perFrameMs": 41.67,
+      "durationMs": 500.0,
+      "sourceFrames": 6
+    },
+    {
+      "character": "MoMei",
+      "name": "Kneel",
+      "loop": true,
+      "frameCount": 8,
+      "perFrameMs": 100.0,
+      "durationMs": 800.0,
+      "sourceFrames": 4
+    },
+    {
+      "character": "MoMei",
+      "name": "Combat",
+      "loop": false,
+      "frameCount": 13,
+      "perFrameMs": 66.67,
+      "durationMs": 866.67,
+      "sourceFrames": 7
+    }
+  ]
+}
