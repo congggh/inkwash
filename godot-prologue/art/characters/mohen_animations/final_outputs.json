@@ -1,0 +1,244 @@
+{
+  "character": "墨痕",
+  "facing": "right",
+  "cellSize": [
+    512,
+    560
+  ],
+  "grid": [
+    4,
+    2
+  ],
+  "groundAnchor": [
+    256,
+    500
+  ],
+  "spriteFrames": "MoHenSpriteFrames.tres",
+  "animations": {
+    "idle": {
+      "label": "待机",
+      "atlas": "idle.png",
+      "loop": true,
+      "frameDurationsMs": [
+        125,
+        125,
+        125,
+        125,
+        125,
+        125,
+        125,
+        125
+      ]
+    },
+    "run": {
+      "label": "奔跑",
+      "atlas": "run.png",
+      "loop": true,
+      "frameDurationsMs": [
+        72,
+        72,
+        72,
+        72,
+        72,
+        72,
+        72,
+        72
+      ]
+    },
+    "jump": {
+      "label": "起跳与落地",
+      "atlas": "jump.png",
+      "loop": false,
+      "frameDurationsMs": [
+        65,
+        75,
+        55,
+        95,
+        110,
+        90,
+        80,
+        70
+      ]
+    },
+    "attack": {
+      "label": "横抹截江",
+      "atlas": "attack.png",
+      "loop": false,
+      "frameDurationsMs": [
+        42,
+        56,
+        40,
+        31,
+        49,
+        65,
+        68,
+        49
+      ]
+    },
+    "heavy_cut": {
+      "label": "枯笔断岳（起手）",
+      "atlas": "heavy_cut.png",
+      "loop": false,
+      "frameDurationsMs": [
+        58,
+        48,
+        55,
+        92,
+        38,
+        80,
+        72,
+        61
+      ]
+    },
+    "heavy_link": {
+      "label": "枯笔断岳（衔接）",
+      "atlas": "heavy_link.png",
+      "loop": false,
+      "frameDurationsMs": [
+        41,
+        35,
+        35,
+        37,
+        69,
+        71,
+        82,
+        58
+      ]
+    },
+    "rising_cut": {
+      "label": "倒卷帘",
+      "atlas": "rising_cut.png",
+      "loop": false,
+      "frameDurationsMs": [
+        35,
+        45,
+        41,
+        37,
+        41,
+        66,
+        75,
+        58
+      ]
+    },
+    "double_jump": {
+      "label": "二段跳",
+      "atlas": "double_jump.png",
+      "loop": false,
+      "frameDurationsMs": [
+        45,
+        50,
+        55,
+        65,
+        85,
+        100,
+        105,
+        140
+      ]
+    }
+  },
+  "previewScene": "res://scenes/characters/MoHenAnimationPreview.tscn",
+  "generationPrompt": "以原立绘为角色参考，保留焦墨右臂、残破宣纸衣、暗红围巾和裁云断刃。右向横版，同一比例、透明背景，每组八格，逐格表现呼吸、完整跑步周期、起跳到落地或一次横向挥砍。",
+  "attackCombo": {
+    "maxSteps": 3,
+    "bufferSlots": 1,
+    "J": {
+      "start": "attack",
+      "attack": "rising_cut",
+      "rising_cut": "heavy_link",
+      "heavy_cut": "rising_cut"
+    },
+    "I": {
+      "start": "heavy_cut",
+      "attack": "heavy_cut",
+      "rising_cut": "heavy_link"
+    },
+    "linkFramesZeroBased": {
+      "attack": 6,
+      "rising_cut": 6,
+      "heavy_cut": 6
+    },
+    "generationPrompt": "沿用墨痕立绘，以右向横版绘制倒卷帘的斜挑、枯笔断岳的举刀下劈，以及从上挑高举直接衔接的重劈。保持同一断刃、服装和体型。",
+    "startFrameOverridesZeroBased": {
+      "attack → heavy_cut": 1
+    }
+  },
+  "inkEffects": {
+    "spriteFrames": "MoHenInkFrames.tres",
+    "atlas": "ink_effects.png",
+    "cellSize": [
+      360,
+      360
+    ],
+    "grid": [
+      4,
+      4
+    ],
+    "rows": {
+      "sweep": {
+        "row": 0,
+        "label": "横抹截江·飞白横弧",
+        "frameDurationsMs": [
+          28,
+          51,
+          63,
+          86
+        ]
+      },
+      "rise": {
+        "row": 1,
+        "label": "倒卷帘·逆势墨挑",
+        "frameDurationsMs": [
+          32,
+          53,
+          70,
+          88
+        ]
+      },
+      "cleave": {
+        "row": 2,
+        "label": "枯笔断岳·纵劈墨瀑",
+        "frameDurationsMs": [
+          32,
+          64,
+          83,
+          104
+        ]
+      },
+      "air": {
+        "row": 3,
+        "label": "二段跳·踏空墨花",
+        "frameDurationsMs": [
+          34,
+          54,
+          73,
+          98
+        ]
+      }
+    },
+    "attackCuesZeroBased": {
+      "attack": [
+        3,
+        "sweep"
+      ],
+      "rising_cut": [
+        3,
+        "rise"
+      ],
+      "heavy_cut": [
+        4,
+        "cleave"
+      ],
+      "heavy_link": [
+        3,
+        "cleave"
+      ]
+    },
+    "generationPrompt": "绘制横向飞白弧、斜向上挑墨迹、下劈墨瀑及踏空墨花。焦墨、宣纸白、少量朱砂。每种特效四帧，由起势到飞散。"
+  },
+  "doubleJump": {
+    "generationPrompt": "墨痕右向横版，在空中收腿、踩空蹬伸、再抬膝并伸腿准备下落，八格透明，保留原立绘造型。",
+    "usesPerJump": 1,
+    "reset": "landing",
+    "movement": "runtime"
+  }
+}

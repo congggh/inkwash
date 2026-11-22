@@ -1,0 +1,2568 @@
+[gd_scene load_steps=198 format=3]
+
+[ext_resource type="Texture2D" path="atlases/idle.png" id="idle"]
+
+[ext_resource type="Texture2D" path="atlases/run.png" id="run"]
+
+[ext_resource type="Texture2D" path="atlases/brake.png" id="brake"]
+
+[ext_resource type="Texture2D" path="atlases/jump.png" id="jump"]
+
+[ext_resource type="Texture2D" path="atlases/double_jump.png" id="double_jump"]
+
+[ext_resource type="Texture2D" path="atlases/dash.png" id="dash"]
+
+[ext_resource type="Texture2D" path="atlases/rift_grind.png" id="rift_grind"]
+
+[ext_resource type="Texture2D" path="atlases/slash_1.png" id="slash_1"]
+
+[ext_resource type="Texture2D" path="atlases/slash_2.png" id="slash_2"]
+
+[ext_resource type="Texture2D" path="atlases/slash_3.png" id="slash_3"]
+
+[ext_resource type="Texture2D" path="atlases/heavy_starter.png" id="heavy_starter"]
+
+[ext_resource type="Texture2D" path="atlases/pogo.png" id="pogo"]
+
+[ext_resource type="Texture2D" path="atlases/spatial_fold.png" id="spatial_fold"]
+
+[ext_resource type="Texture2D" path="atlases/rift_slingshot.png" id="rift_slingshot"]
+
+[ext_resource type="Texture2D" path="atlases/parry_peel.png" id="parry_peel"]
+
+[ext_resource type="Texture2D" path="atlases/paper_rip.png" id="paper_rip"]
+
+[ext_resource type="Texture2D" path="atlases/scroll_flip.png" id="scroll_flip"]
+
+[ext_resource type="Texture2D" path="atlases/scroll_finish.png" id="scroll_finish"]
+
+[ext_resource type="Texture2D" path="atlases/sweep.png" id="sweep"]
+
+[ext_resource type="Texture2D" path="atlases/rise.png" id="rise"]
+
+[ext_resource type="Texture2D" path="atlases/cleave.png" id="cleave"]
+
+[ext_resource type="Texture2D" path="atlases/air.png" id="air"]
+
+[ext_resource type="Texture2D" path="atlases/dash_wake.png" id="dash_wake"]
+
+[ext_resource type="Texture2D" path="atlases/rift_decal.png" id="rift_decal"]
+
+[ext_resource type="Texture2D" path="atlases/lotus.png" id="lotus"]
+
+[ext_resource type="Texture2D" path="atlases/parry_ring.png" id="parry_ring"]
+
+[ext_resource type="Texture2D" path="atlases/fold.png" id="fold"]
+
+[ext_resource type="Texture2D" path="atlases/slingshot.png" id="slingshot"]
+
+[ext_resource type="Texture2D" path="atlases/scroll.png" id="scroll"]
+
+[ext_resource type="Texture2D" path="atlases/seal_butterflies.png" id="seal_butterflies"]
+
+[sub_resource type="AtlasTexture" id="Tex_idle_1"]
+atlas = ExtResource("idle")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_2"]
+atlas = ExtResource("idle")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_3"]
+atlas = ExtResource("idle")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_4"]
+atlas = ExtResource("idle")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_run_1"]
+atlas = ExtResource("run")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_run_2"]
+atlas = ExtResource("run")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_run_3"]
+atlas = ExtResource("run")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_run_4"]
+atlas = ExtResource("run")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_brake_1"]
+atlas = ExtResource("brake")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_brake_2"]
+atlas = ExtResource("brake")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_brake_3"]
+atlas = ExtResource("brake")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_brake_4"]
+atlas = ExtResource("brake")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_jump_1"]
+atlas = ExtResource("jump")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_jump_2"]
+atlas = ExtResource("jump")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_jump_3"]
+atlas = ExtResource("jump")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_jump_4"]
+atlas = ExtResource("jump")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_jump_5"]
+atlas = ExtResource("jump")
+region = Rect2(0, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_jump_6"]
+atlas = ExtResource("jump")
+region = Rect2(512, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_jump_7"]
+atlas = ExtResource("jump")
+region = Rect2(1024, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_jump_8"]
+atlas = ExtResource("jump")
+region = Rect2(1536, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_double_jump_1"]
+atlas = ExtResource("double_jump")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_double_jump_2"]
+atlas = ExtResource("double_jump")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_double_jump_3"]
+atlas = ExtResource("double_jump")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_double_jump_4"]
+atlas = ExtResource("double_jump")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_double_jump_5"]
+atlas = ExtResource("double_jump")
+region = Rect2(0, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_double_jump_6"]
+atlas = ExtResource("double_jump")
+region = Rect2(512, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_double_jump_7"]
+atlas = ExtResource("double_jump")
+region = Rect2(1024, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_double_jump_8"]
+atlas = ExtResource("double_jump")
+region = Rect2(1536, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_dash_1"]
+atlas = ExtResource("dash")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_dash_2"]
+atlas = ExtResource("dash")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_dash_3"]
+atlas = ExtResource("dash")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_dash_4"]
+atlas = ExtResource("dash")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rift_grind_1"]
+atlas = ExtResource("rift_grind")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rift_grind_2"]
+atlas = ExtResource("rift_grind")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rift_grind_3"]
+atlas = ExtResource("rift_grind")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rift_grind_4"]
+atlas = ExtResource("rift_grind")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_1_1"]
+atlas = ExtResource("slash_1")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_1_2"]
+atlas = ExtResource("slash_1")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_1_3"]
+atlas = ExtResource("slash_1")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_1_4"]
+atlas = ExtResource("slash_1")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_1_5"]
+atlas = ExtResource("slash_1")
+region = Rect2(0, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_1_6"]
+atlas = ExtResource("slash_1")
+region = Rect2(512, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_1_7"]
+atlas = ExtResource("slash_1")
+region = Rect2(1024, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_1_8"]
+atlas = ExtResource("slash_1")
+region = Rect2(1536, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_2_1"]
+atlas = ExtResource("slash_2")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_2_2"]
+atlas = ExtResource("slash_2")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_2_3"]
+atlas = ExtResource("slash_2")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_2_4"]
+atlas = ExtResource("slash_2")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_2_5"]
+atlas = ExtResource("slash_2")
+region = Rect2(0, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_2_6"]
+atlas = ExtResource("slash_2")
+region = Rect2(512, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_2_7"]
+atlas = ExtResource("slash_2")
+region = Rect2(1024, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_2_8"]
+atlas = ExtResource("slash_2")
+region = Rect2(1536, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_3_1"]
+atlas = ExtResource("slash_3")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_3_2"]
+atlas = ExtResource("slash_3")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_3_3"]
+atlas = ExtResource("slash_3")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_3_4"]
+atlas = ExtResource("slash_3")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_3_5"]
+atlas = ExtResource("slash_3")
+region = Rect2(0, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_3_6"]
+atlas = ExtResource("slash_3")
+region = Rect2(512, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_3_7"]
+atlas = ExtResource("slash_3")
+region = Rect2(1024, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slash_3_8"]
+atlas = ExtResource("slash_3")
+region = Rect2(1536, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_heavy_starter_1"]
+atlas = ExtResource("heavy_starter")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_heavy_starter_2"]
+atlas = ExtResource("heavy_starter")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_heavy_starter_3"]
+atlas = ExtResource("heavy_starter")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_heavy_starter_4"]
+atlas = ExtResource("heavy_starter")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_heavy_starter_5"]
+atlas = ExtResource("heavy_starter")
+region = Rect2(0, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_heavy_starter_6"]
+atlas = ExtResource("heavy_starter")
+region = Rect2(512, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_heavy_starter_7"]
+atlas = ExtResource("heavy_starter")
+region = Rect2(1024, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_heavy_starter_8"]
+atlas = ExtResource("heavy_starter")
+region = Rect2(1536, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_pogo_1"]
+atlas = ExtResource("pogo")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_pogo_2"]
+atlas = ExtResource("pogo")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_pogo_3"]
+atlas = ExtResource("pogo")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_pogo_4"]
+atlas = ExtResource("pogo")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spatial_fold_1"]
+atlas = ExtResource("spatial_fold")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spatial_fold_2"]
+atlas = ExtResource("spatial_fold")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spatial_fold_3"]
+atlas = ExtResource("spatial_fold")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spatial_fold_4"]
+atlas = ExtResource("spatial_fold")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rift_slingshot_1"]
+atlas = ExtResource("rift_slingshot")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rift_slingshot_2"]
+atlas = ExtResource("rift_slingshot")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rift_slingshot_3"]
+atlas = ExtResource("rift_slingshot")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rift_slingshot_4"]
+atlas = ExtResource("rift_slingshot")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_parry_peel_1"]
+atlas = ExtResource("parry_peel")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_parry_peel_2"]
+atlas = ExtResource("parry_peel")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_parry_peel_3"]
+atlas = ExtResource("parry_peel")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_parry_peel_4"]
+atlas = ExtResource("parry_peel")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_paper_rip_1"]
+atlas = ExtResource("paper_rip")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_paper_rip_2"]
+atlas = ExtResource("paper_rip")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_paper_rip_3"]
+atlas = ExtResource("paper_rip")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_paper_rip_4"]
+atlas = ExtResource("paper_rip")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_flip_1"]
+atlas = ExtResource("scroll_flip")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_flip_2"]
+atlas = ExtResource("scroll_flip")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_flip_3"]
+atlas = ExtResource("scroll_flip")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_flip_4"]
+atlas = ExtResource("scroll_flip")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_flip_5"]
+atlas = ExtResource("scroll_flip")
+region = Rect2(0, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_flip_6"]
+atlas = ExtResource("scroll_flip")
+region = Rect2(512, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_flip_7"]
+atlas = ExtResource("scroll_flip")
+region = Rect2(1024, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_flip_8"]
+atlas = ExtResource("scroll_flip")
+region = Rect2(1536, 320, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_finish_1"]
+atlas = ExtResource("scroll_finish")
+region = Rect2(0, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_finish_2"]
+atlas = ExtResource("scroll_finish")
+region = Rect2(512, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_finish_3"]
+atlas = ExtResource("scroll_finish")
+region = Rect2(1024, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_finish_4"]
+atlas = ExtResource("scroll_finish")
+region = Rect2(1536, 0, 512, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_sweep_1"]
+atlas = ExtResource("sweep")
+region = Rect2(0, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_sweep_2"]
+atlas = ExtResource("sweep")
+region = Rect2(300, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_sweep_3"]
+atlas = ExtResource("sweep")
+region = Rect2(600, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_sweep_4"]
+atlas = ExtResource("sweep")
+region = Rect2(900, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rise_1"]
+atlas = ExtResource("rise")
+region = Rect2(0, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rise_2"]
+atlas = ExtResource("rise")
+region = Rect2(300, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rise_3"]
+atlas = ExtResource("rise")
+region = Rect2(600, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rise_4"]
+atlas = ExtResource("rise")
+region = Rect2(900, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_cleave_1"]
+atlas = ExtResource("cleave")
+region = Rect2(0, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_cleave_2"]
+atlas = ExtResource("cleave")
+region = Rect2(300, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_cleave_3"]
+atlas = ExtResource("cleave")
+region = Rect2(600, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_cleave_4"]
+atlas = ExtResource("cleave")
+region = Rect2(900, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_air_1"]
+atlas = ExtResource("air")
+region = Rect2(0, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_air_2"]
+atlas = ExtResource("air")
+region = Rect2(300, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_air_3"]
+atlas = ExtResource("air")
+region = Rect2(600, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_air_4"]
+atlas = ExtResource("air")
+region = Rect2(900, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_dash_wake_1"]
+atlas = ExtResource("dash_wake")
+region = Rect2(0, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_dash_wake_2"]
+atlas = ExtResource("dash_wake")
+region = Rect2(300, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_dash_wake_3"]
+atlas = ExtResource("dash_wake")
+region = Rect2(600, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_dash_wake_4"]
+atlas = ExtResource("dash_wake")
+region = Rect2(900, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rift_decal_1"]
+atlas = ExtResource("rift_decal")
+region = Rect2(0, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rift_decal_2"]
+atlas = ExtResource("rift_decal")
+region = Rect2(300, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rift_decal_3"]
+atlas = ExtResource("rift_decal")
+region = Rect2(600, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rift_decal_4"]
+atlas = ExtResource("rift_decal")
+region = Rect2(900, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_lotus_1"]
+atlas = ExtResource("lotus")
+region = Rect2(0, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_lotus_2"]
+atlas = ExtResource("lotus")
+region = Rect2(300, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_lotus_3"]
+atlas = ExtResource("lotus")
+region = Rect2(600, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_lotus_4"]
+atlas = ExtResource("lotus")
+region = Rect2(900, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_parry_ring_1"]
+atlas = ExtResource("parry_ring")
+region = Rect2(0, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_parry_ring_2"]
+atlas = ExtResource("parry_ring")
+region = Rect2(300, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_parry_ring_3"]
+atlas = ExtResource("parry_ring")
+region = Rect2(600, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_parry_ring_4"]
+atlas = ExtResource("parry_ring")
+region = Rect2(900, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_fold_1"]
+atlas = ExtResource("fold")
+region = Rect2(0, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_fold_2"]
+atlas = ExtResource("fold")
+region = Rect2(300, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_fold_3"]
+atlas = ExtResource("fold")
+region = Rect2(600, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_fold_4"]
+atlas = ExtResource("fold")
+region = Rect2(900, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slingshot_1"]
+atlas = ExtResource("slingshot")
+region = Rect2(0, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slingshot_2"]
+atlas = ExtResource("slingshot")
+region = Rect2(300, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slingshot_3"]
+atlas = ExtResource("slingshot")
+region = Rect2(600, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_slingshot_4"]
+atlas = ExtResource("slingshot")
+region = Rect2(900, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_1"]
+atlas = ExtResource("scroll")
+region = Rect2(0, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_2"]
+atlas = ExtResource("scroll")
+region = Rect2(300, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_3"]
+atlas = ExtResource("scroll")
+region = Rect2(600, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scroll_4"]
+atlas = ExtResource("scroll")
+region = Rect2(900, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_seal_butterflies_1"]
+atlas = ExtResource("seal_butterflies")
+region = Rect2(0, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_seal_butterflies_2"]
+atlas = ExtResource("seal_butterflies")
+region = Rect2(300, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_seal_butterflies_3"]
+atlas = ExtResource("seal_butterflies")
+region = Rect2(600, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_seal_butterflies_4"]
+atlas = ExtResource("seal_butterflies")
+region = Rect2(900, 0, 300, 300)
+filter_clip = true
+
+[sub_resource type="Animation" id="Anim_idle"]
+resource_name = "idle"
+length = 1.064000000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.133000000, 0.266000000, 0.399000000, 0.532000000, 0.665000000, 0.798000000, 0.931000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_idle_1"), SubResource("Tex_idle_2"), SubResource("Tex_idle_3"), SubResource("Tex_idle_4"), SubResource("Tex_idle_4"), SubResource("Tex_idle_3"), SubResource("Tex_idle_2"), SubResource("Tex_idle_1")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_run"]
+resource_name = "run"
+length = 0.536000000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.067000000, 0.134000000, 0.201000000, 0.268000000, 0.335000000, 0.402000000, 0.469000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_run_1"), SubResource("Tex_run_1"), SubResource("Tex_run_2"), SubResource("Tex_run_2"), SubResource("Tex_run_3"), SubResource("Tex_run_3"), SubResource("Tex_run_4"), SubResource("Tex_run_4")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.033000000, 0.083000000, 0.150000000, 0.233000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_dash_wake_1"), SubResource("Tex_dash_wake_2"), SubResource("Tex_dash_wake_3"), SubResource("Tex_dash_wake_4"), null]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(-27, -21)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.35, 0.35)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000, 0.268000000, 0.301000000, 0.351000000, 0.418000000, 0.501000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_dash_wake_1"), SubResource("Tex_dash_wake_2"), SubResource("Tex_dash_wake_3"), SubResource("Tex_dash_wake_4"), null]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(-27, -21)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.35, 0.35)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_brake"]
+resource_name = "brake"
+length = 0.268000000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.067000000, 0.134000000, 0.201000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_brake_1"), SubResource("Tex_brake_2"), SubResource("Tex_brake_3"), SubResource("Tex_brake_4")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.033000000, 0.083000000, 0.150000000, 0.233000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_dash_wake_1"), SubResource("Tex_dash_wake_2"), SubResource("Tex_dash_wake_3"), SubResource("Tex_dash_wake_4"), null]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(3, -15)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.53, 0.53)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_jump"]
+resource_name = "jump"
+length = 0.216666667
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.033333333, 0.050000000, 0.066666667, 0.083333333, 0.100000000, 0.116666667, 0.133333333, 0.150000000, 0.166666667, 0.183333333, 0.200000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_jump_2"), SubResource("Tex_jump_3"), SubResource("Tex_jump_4"), SubResource("Tex_jump_4"), SubResource("Tex_jump_5"), SubResource("Tex_jump_5"), SubResource("Tex_jump_5"), SubResource("Tex_jump_6"), SubResource("Tex_jump_6"), SubResource("Tex_jump_6"), SubResource("Tex_jump_7"), SubResource("Tex_jump_7"), SubResource("Tex_jump_8")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.049666667, 0.099666667, 0.166666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_air_1"), SubResource("Tex_air_2"), SubResource("Tex_air_3"), SubResource("Tex_air_4")]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -12)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.52, 0.52)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_double_jump"]
+resource_name = "double_jump"
+length = 0.645000000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.045000000, 0.095000000, 0.150000000, 0.215000000, 0.300000000, 0.400000000, 0.505000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_double_jump_1"), SubResource("Tex_double_jump_2"), SubResource("Tex_double_jump_3"), SubResource("Tex_double_jump_4"), SubResource("Tex_double_jump_5"), SubResource("Tex_double_jump_6"), SubResource("Tex_double_jump_7"), SubResource("Tex_double_jump_8")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.045000000, 0.078000000, 0.128000000, 0.195000000, 0.278000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_air_1"), SubResource("Tex_air_2"), SubResource("Tex_air_3"), SubResource("Tex_air_4"), null]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -18)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.68, 0.68)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_dash"]
+resource_name = "dash"
+length = 0.180000000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.020000000, 0.050000000, 0.080000000, 0.110000000, 0.140000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_dash_1"), SubResource("Tex_dash_2"), SubResource("Tex_dash_3"), SubResource("Tex_dash_2"), SubResource("Tex_dash_3"), SubResource("Tex_dash_4")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.033000000, 0.083000000, 0.150000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_dash_wake_1"), SubResource("Tex_dash_wake_2"), SubResource("Tex_dash_wake_3"), SubResource("Tex_dash_wake_4")]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(-47, -21)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.9, 0.9)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000, 0.020000000, 0.053000000, 0.103000000, 0.170000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_rift_decal_1"), SubResource("Tex_rift_decal_2"), SubResource("Tex_rift_decal_3"), SubResource("Tex_rift_decal_4")]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(-62, -14)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.65, 0.65)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_rift_grind"]
+resource_name = "rift_grind"
+length = 0.100000000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.033333333, 0.050000000, 0.066666667, 0.083333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_rift_grind_1"), SubResource("Tex_rift_grind_2"), SubResource("Tex_rift_grind_3"), SubResource("Tex_rift_grind_3"), SubResource("Tex_rift_grind_3"), SubResource("Tex_rift_grind_4")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.049666667, 0.099666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_rift_decal_1"), SubResource("Tex_rift_decal_2"), SubResource("Tex_rift_decal_3")]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -17)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1.0, 1.0)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_slash_1"]
+resource_name = "slash_1"
+length = 0.266666667
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.033333333, 0.050000000, 0.066666667, 0.083333333, 0.100000000, 0.116666667, 0.133333333, 0.150000000, 0.166666667, 0.183333333, 0.200000000, 0.216666667, 0.233333333, 0.250000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_slash_1_1"), SubResource("Tex_slash_1_1"), SubResource("Tex_slash_1_2"), SubResource("Tex_slash_1_3"), SubResource("Tex_slash_1_4"), SubResource("Tex_slash_1_5"), SubResource("Tex_slash_1_5"), SubResource("Tex_slash_1_6"), SubResource("Tex_slash_1_6"), SubResource("Tex_slash_1_7"), SubResource("Tex_slash_1_7"), SubResource("Tex_slash_1_7"), SubResource("Tex_slash_1_8"), SubResource("Tex_slash_1_8"), SubResource("Tex_slash_1_8"), SubResource("Tex_slash_1_8")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.066666667, 0.099666667, 0.149666667, 0.216666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_sweep_1"), SubResource("Tex_sweep_2"), SubResource("Tex_sweep_3"), SubResource("Tex_sweep_4")]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(88, -130)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1.0, 1.0)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_slash_2"]
+resource_name = "slash_2"
+length = 0.266666667
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.033333333, 0.050000000, 0.066666667, 0.083333333, 0.100000000, 0.116666667, 0.133333333, 0.150000000, 0.166666667, 0.183333333, 0.200000000, 0.216666667, 0.233333333, 0.250000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_slash_2_1"), SubResource("Tex_slash_2_1"), SubResource("Tex_slash_2_2"), SubResource("Tex_slash_2_3"), SubResource("Tex_slash_2_3"), SubResource("Tex_slash_2_4"), SubResource("Tex_slash_2_5"), SubResource("Tex_slash_2_5"), SubResource("Tex_slash_2_6"), SubResource("Tex_slash_2_6"), SubResource("Tex_slash_2_7"), SubResource("Tex_slash_2_7"), SubResource("Tex_slash_2_7"), SubResource("Tex_slash_2_8"), SubResource("Tex_slash_2_8"), SubResource("Tex_slash_2_8")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.050000000, 0.083000000, 0.133000000, 0.200000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_rise_1"), SubResource("Tex_rise_2"), SubResource("Tex_rise_3"), SubResource("Tex_rise_4")]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(75, -163)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1.0, 1.0)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_slash_3"]
+resource_name = "slash_3"
+length = 0.366666667
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.033333333, 0.050000000, 0.066666667, 0.083333333, 0.100000000, 0.116666667, 0.133333333, 0.150000000, 0.166666667, 0.183333333, 0.200000000, 0.216666667, 0.233333333, 0.250000000, 0.266666667, 0.283333333, 0.300000000, 0.316666667, 0.333333333, 0.350000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_slash_3_1"), SubResource("Tex_slash_3_1"), SubResource("Tex_slash_3_2"), SubResource("Tex_slash_3_2"), SubResource("Tex_slash_3_3"), SubResource("Tex_slash_3_3"), SubResource("Tex_slash_3_4"), SubResource("Tex_slash_3_5"), SubResource("Tex_slash_3_5"), SubResource("Tex_slash_3_5"), SubResource("Tex_slash_3_6"), SubResource("Tex_slash_3_6"), SubResource("Tex_slash_3_6"), SubResource("Tex_slash_3_6"), SubResource("Tex_slash_3_7"), SubResource("Tex_slash_3_7"), SubResource("Tex_slash_3_7"), SubResource("Tex_slash_3_7"), SubResource("Tex_slash_3_8"), SubResource("Tex_slash_3_8"), SubResource("Tex_slash_3_8"), SubResource("Tex_slash_3_8")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.116666667, 0.149666667, 0.199666667, 0.266666667, 0.349666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_cleave_1"), SubResource("Tex_cleave_2"), SubResource("Tex_cleave_3"), SubResource("Tex_cleave_4"), null]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(97, -122)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1.1, 1.1)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000, 0.166666667, 0.199666667, 0.249666667, 0.316666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_rift_decal_1"), SubResource("Tex_rift_decal_2"), SubResource("Tex_rift_decal_3"), SubResource("Tex_rift_decal_4")]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(98, -12)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.75, 0.75)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_heavy_starter"]
+resource_name = "heavy_starter"
+length = 0.366666667
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.033333333, 0.050000000, 0.066666667, 0.083333333, 0.100000000, 0.116666667, 0.133333333, 0.150000000, 0.166666667, 0.183333333, 0.200000000, 0.216666667, 0.233333333, 0.250000000, 0.266666667, 0.283333333, 0.300000000, 0.316666667, 0.333333333, 0.350000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_heavy_starter_1"), SubResource("Tex_heavy_starter_1"), SubResource("Tex_heavy_starter_2"), SubResource("Tex_heavy_starter_2"), SubResource("Tex_heavy_starter_3"), SubResource("Tex_heavy_starter_3"), SubResource("Tex_heavy_starter_4"), SubResource("Tex_heavy_starter_4"), SubResource("Tex_heavy_starter_5"), SubResource("Tex_heavy_starter_5"), SubResource("Tex_heavy_starter_5"), SubResource("Tex_heavy_starter_6"), SubResource("Tex_heavy_starter_6"), SubResource("Tex_heavy_starter_6"), SubResource("Tex_heavy_starter_7"), SubResource("Tex_heavy_starter_7"), SubResource("Tex_heavy_starter_7"), SubResource("Tex_heavy_starter_7"), SubResource("Tex_heavy_starter_8"), SubResource("Tex_heavy_starter_8"), SubResource("Tex_heavy_starter_8"), SubResource("Tex_heavy_starter_8")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.133333333, 0.166333333, 0.216333333, 0.283333333, 0.366333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_cleave_1"), SubResource("Tex_cleave_2"), SubResource("Tex_cleave_3"), SubResource("Tex_cleave_4"), null]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(96, -120)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1.0, 1.0)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_pogo"]
+resource_name = "pogo"
+length = 0.200000000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.033333333, 0.050000000, 0.066666667, 0.083333333, 0.100000000, 0.116666667, 0.133333333, 0.150000000, 0.166666667, 0.183333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_pogo_1"), SubResource("Tex_pogo_1"), SubResource("Tex_pogo_2"), SubResource("Tex_pogo_2"), SubResource("Tex_pogo_2"), SubResource("Tex_pogo_3"), SubResource("Tex_pogo_3"), SubResource("Tex_pogo_3"), SubResource("Tex_pogo_4"), SubResource("Tex_pogo_4"), SubResource("Tex_pogo_4"), SubResource("Tex_pogo_4")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.033333333, 0.066333333, 0.116333333, 0.183333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_cleave_1"), SubResource("Tex_cleave_2"), SubResource("Tex_cleave_3"), SubResource("Tex_cleave_4")]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(37, -82)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.82, 0.82)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000, 0.116666667, 0.149666667, 0.199666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_lotus_1"), SubResource("Tex_lotus_2"), SubResource("Tex_lotus_3")]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(5, -5)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.72, 0.72)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_spatial_fold"]
+resource_name = "spatial_fold"
+length = 0.233333333
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.033333333, 0.050000000, 0.066666667, 0.083333333, 0.100000000, 0.116666667, 0.133333333, 0.150000000, 0.166666667, 0.183333333, 0.200000000, 0.216666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_spatial_fold_1"), SubResource("Tex_spatial_fold_1"), SubResource("Tex_spatial_fold_2"), SubResource("Tex_spatial_fold_2"), SubResource("Tex_spatial_fold_3"), SubResource("Tex_spatial_fold_3"), SubResource("Tex_spatial_fold_3"), SubResource("Tex_spatial_fold_3"), SubResource("Tex_spatial_fold_3"), SubResource("Tex_spatial_fold_4"), SubResource("Tex_spatial_fold_4"), SubResource("Tex_spatial_fold_4"), SubResource("Tex_spatial_fold_4"), SubResource("Tex_spatial_fold_4")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.066666667, 0.099666667, 0.149666667, 0.216666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_fold_1"), SubResource("Tex_fold_2"), SubResource("Tex_fold_3"), SubResource("Tex_fold_4")]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(59, -113)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1.0, 1.0)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_rift_slingshot"]
+resource_name = "rift_slingshot"
+length = 0.200000000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.033333333, 0.050000000, 0.066666667, 0.083333333, 0.100000000, 0.116666667, 0.133333333, 0.150000000, 0.166666667, 0.183333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_rift_slingshot_1"), SubResource("Tex_rift_slingshot_1"), SubResource("Tex_rift_slingshot_1"), SubResource("Tex_rift_slingshot_2"), SubResource("Tex_rift_slingshot_2"), SubResource("Tex_rift_slingshot_2"), SubResource("Tex_rift_slingshot_2"), SubResource("Tex_rift_slingshot_3"), SubResource("Tex_rift_slingshot_3"), SubResource("Tex_rift_slingshot_4"), SubResource("Tex_rift_slingshot_4"), SubResource("Tex_rift_slingshot_4")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.033000000, 0.083000000, 0.150000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_slingshot_1"), SubResource("Tex_slingshot_2"), SubResource("Tex_slingshot_3"), SubResource("Tex_slingshot_4")]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(56, -137)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1.0, 1.0)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_parry_peel"]
+resource_name = "parry_peel"
+length = 0.233333333
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.033333333, 0.050000000, 0.066666667, 0.083333333, 0.100000000, 0.116666667, 0.133333333, 0.150000000, 0.166666667, 0.183333333, 0.200000000, 0.216666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_parry_peel_1"), SubResource("Tex_parry_peel_1"), SubResource("Tex_parry_peel_2"), SubResource("Tex_parry_peel_2"), SubResource("Tex_parry_peel_2"), SubResource("Tex_parry_peel_2"), SubResource("Tex_parry_peel_3"), SubResource("Tex_parry_peel_3"), SubResource("Tex_parry_peel_3"), SubResource("Tex_parry_peel_3"), SubResource("Tex_parry_peel_4"), SubResource("Tex_parry_peel_4"), SubResource("Tex_parry_peel_4"), SubResource("Tex_parry_peel_4")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.033333333, 0.066333333, 0.116333333, 0.183333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_parry_ring_1"), SubResource("Tex_parry_ring_2"), SubResource("Tex_parry_ring_3"), SubResource("Tex_parry_ring_4")]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(49, -147)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.88, 0.88)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000, 0.100000000, 0.133000000, 0.183000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_sweep_1"), SubResource("Tex_sweep_2"), SubResource("Tex_sweep_3")]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(74, -119)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.85, 0.85)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_paper_rip"]
+resource_name = "paper_rip"
+length = 0.166666667
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.033333333, 0.050000000, 0.066666667, 0.083333333, 0.100000000, 0.116666667, 0.133333333, 0.150000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_paper_rip_1"), SubResource("Tex_paper_rip_1"), SubResource("Tex_paper_rip_1"), SubResource("Tex_paper_rip_2"), SubResource("Tex_paper_rip_2"), SubResource("Tex_paper_rip_3"), SubResource("Tex_paper_rip_3"), SubResource("Tex_paper_rip_4"), SubResource("Tex_paper_rip_4"), SubResource("Tex_paper_rip_4")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.066666667, 0.099666667, 0.149666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_seal_butterflies_1"), SubResource("Tex_seal_butterflies_2"), SubResource("Tex_seal_butterflies_3")]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(56, -116)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.92, 0.92)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Anim_scroll_flip"]
+resource_name = "scroll_flip"
+length = 0.133333333
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.033333333, 0.050000000, 0.066666667, 0.083333333, 0.100000000, 0.116666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_scroll_flip_1"), SubResource("Tex_scroll_flip_2"), SubResource("Tex_scroll_flip_3"), SubResource("Tex_scroll_flip_4"), SubResource("Tex_scroll_flip_5"), SubResource("Tex_scroll_flip_6"), SubResource("Tex_scroll_flip_7"), SubResource("Tex_scroll_flip_8")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.033000000, 0.083000000),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_scroll_1"), SubResource("Tex_scroll_2"), SubResource("Tex_scroll_3")]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(75, -90)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1.0, 1.0)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000, 0.033333333, 0.066333333, 0.116333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_sweep_1"), SubResource("Tex_sweep_2"), SubResource("Tex_sweep_3")]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(85, -135)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.8, 0.8)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000, 0.083333333, 0.116333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_rise_1"), SubResource("Tex_rise_2")]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(73, -137)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.76, 0.76)]
+}
+
+[sub_resource type="Animation" id="Anim_scroll_finish"]
+resource_name = "scroll_finish"
+length = 0.133333333
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000000, 0.016666667, 0.033333333, 0.050000000, 0.066666667, 0.083333333, 0.100000000, 0.116666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_scroll_finish_1"), SubResource("Tex_scroll_finish_1"), SubResource("Tex_scroll_finish_1"), SubResource("Tex_scroll_finish_2"), SubResource("Tex_scroll_finish_3"), SubResource("Tex_scroll_finish_3"), SubResource("Tex_scroll_finish_4"), SubResource("Tex_scroll_finish_4")]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Ink1:texture")
+tracks/1/interp = 1
+tracks/1/keys = {
+"times": PackedFloat32Array(0.000000000, 0.050000000, 0.083000000, 0.133000000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_parry_ring_1"), SubResource("Tex_parry_ring_2"), SubResource("Tex_parry_ring_3")]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Ink1:position")
+tracks/2/interp = 1
+tracks/2/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(67, -120)]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Ink1:scale")
+tracks/3/interp = 1
+tracks/3/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0.65, 0.65)]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Ink2:texture")
+tracks/4/interp = 1
+tracks/4/keys = {
+"times": PackedFloat32Array(0.000000000, 0.100000000, 0.133000000),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [null, SubResource("Tex_seal_butterflies_1"), SubResource("Tex_seal_butterflies_2")]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Ink2:position")
+tracks/5/interp = 1
+tracks/5/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(63, -128)]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Ink2:scale")
+tracks/6/interp = 1
+tracks/6/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1.0, 1.0)]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Ink3:texture")
+tracks/7/interp = 1
+tracks/7/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Ink3:position")
+tracks/8/interp = 1
+tracks/8/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -0)]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Ink3:scale")
+tracks/9/interp = 1
+tracks/9/keys = {
+"times": PackedFloat32Array(0.000000000),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {&"idle": SubResource("Anim_idle"),
+&"run": SubResource("Anim_run"),
+&"brake": SubResource("Anim_brake"),
+&"jump": SubResource("Anim_jump"),
+&"double_jump": SubResource("Anim_double_jump"),
+&"dash": SubResource("Anim_dash"),
+&"rift_grind": SubResource("Anim_rift_grind"),
+&"slash_1": SubResource("Anim_slash_1"),
+&"slash_2": SubResource("Anim_slash_2"),
+&"slash_3": SubResource("Anim_slash_3"),
+&"heavy_starter": SubResource("Anim_heavy_starter"),
+&"pogo": SubResource("Anim_pogo"),
+&"spatial_fold": SubResource("Anim_spatial_fold"),
+&"rift_slingshot": SubResource("Anim_rift_slingshot"),
+&"parry_peel": SubResource("Anim_parry_peel"),
+&"paper_rip": SubResource("Anim_paper_rip"),
+&"scroll_flip": SubResource("Anim_scroll_flip"),
+&"scroll_finish": SubResource("Anim_scroll_finish")}
+
+[node name="MoHenVisual" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+offset = Vector2(0, -160)
+texture = SubResource("Tex_idle_1")
+
+[node name="Ink1" type="Sprite2D" parent="."]
+z_index = 1
+
+[node name="Ink2" type="Sprite2D" parent="."]
+z_index = 2
+
+[node name="Ink3" type="Sprite2D" parent="."]
+z_index = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("Library")}
+autoplay = "idle"

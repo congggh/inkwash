@@ -1,0 +1,193 @@
+[gd_scene load_steps=32 format=3]
+
+[ext_resource type="Script" path="../visual_driver.gd" id="driver"]
+
+[ext_resource type="Texture2D" path="ruler_array_transformation.png" id="ruler_array_transformation"]
+
+[ext_resource type="Texture2D" path="divine_hover.png" id="divine_hover"]
+
+[ext_resource type="Texture2D" path="cursive_dash.png" id="cursive_dash"]
+
+[ext_resource type="Texture2D" path="elder_tremble.png" id="elder_tremble"]
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_array_transformation_1"]
+atlas = ExtResource("ruler_array_transformation")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_array_transformation_2"]
+atlas = ExtResource("ruler_array_transformation")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_array_transformation_3"]
+atlas = ExtResource("ruler_array_transformation")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_array_transformation_4"]
+atlas = ExtResource("ruler_array_transformation")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_array_transformation_5"]
+atlas = ExtResource("ruler_array_transformation")
+region = Rect2(0, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_array_transformation_6"]
+atlas = ExtResource("ruler_array_transformation")
+region = Rect2(512, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_array_transformation_7"]
+atlas = ExtResource("ruler_array_transformation")
+region = Rect2(1024, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_divine_hover_1"]
+atlas = ExtResource("divine_hover")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_divine_hover_2"]
+atlas = ExtResource("divine_hover")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_divine_hover_3"]
+atlas = ExtResource("divine_hover")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_divine_hover_4"]
+atlas = ExtResource("divine_hover")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_cursive_dash_1"]
+atlas = ExtResource("cursive_dash")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_cursive_dash_2"]
+atlas = ExtResource("cursive_dash")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_cursive_dash_3"]
+atlas = ExtResource("cursive_dash")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_cursive_dash_4"]
+atlas = ExtResource("cursive_dash")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_cursive_dash_5"]
+atlas = ExtResource("cursive_dash")
+region = Rect2(0, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_cursive_dash_6"]
+atlas = ExtResource("cursive_dash")
+region = Rect2(512, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_elder_tremble_1"]
+atlas = ExtResource("elder_tremble")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_elder_tremble_2"]
+atlas = ExtResource("elder_tremble")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_elder_tremble_3"]
+atlas = ExtResource("elder_tremble")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_elder_tremble_4"]
+atlas = ExtResource("elder_tremble")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="Animation" id="Anim_ruler_array_transformation"]
+resource_name = "ruler_array_transformation"
+length = 0.700000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000, 0.600000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_ruler_array_transformation_1"), SubResource("Tex_ruler_array_transformation_2"), SubResource("Tex_ruler_array_transformation_3"), SubResource("Tex_ruler_array_transformation_4"), SubResource("Tex_ruler_array_transformation_5"), SubResource("Tex_ruler_array_transformation_6"), SubResource("Tex_ruler_array_transformation_7")]
+}
+
+[sub_resource type="Animation" id="Anim_divine_hover"]
+resource_name = "divine_hover"
+length = 0.400000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_divine_hover_1"), SubResource("Tex_divine_hover_2"), SubResource("Tex_divine_hover_3"), SubResource("Tex_divine_hover_4")]
+}
+
+[sub_resource type="Animation" id="Anim_cursive_dash"]
+resource_name = "cursive_dash"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_cursive_dash_1"), SubResource("Tex_cursive_dash_2"), SubResource("Tex_cursive_dash_3"), SubResource("Tex_cursive_dash_4"), SubResource("Tex_cursive_dash_5"), SubResource("Tex_cursive_dash_6")]
+}
+
+[sub_resource type="Animation" id="Anim_elder_tremble"]
+resource_name = "elder_tremble"
+length = 0.400000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_elder_tremble_1"), SubResource("Tex_elder_tremble_2"), SubResource("Tex_elder_tremble_3"), SubResource("Tex_elder_tremble_4")]
+}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {&"ruler_array_transformation": SubResource("Anim_ruler_array_transformation"),
+&"divine_hover": SubResource("Anim_divine_hover"),
+&"cursive_dash": SubResource("Anim_cursive_dash"),
+&"elder_tremble": SubResource("Anim_elder_tremble")}
+
+[node name="EnemyVisual" type="Node2D"]
+script = ExtResource("driver")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+offset = Vector2(0, -224)
+texture = SubResource("Tex_divine_hover_1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("Library")}
+autoplay = "divine_hover"

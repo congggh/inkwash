@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://art/references/01/surface.png" id="1"]
+
+[node name="References01" type="Node2D"]
+metadata/title = "序章boss场景"
+
+[node name="Surface" type="Node2D" parent="."]
+metadata/image_size = Vector2(1672, 941)
+metadata/source = "较好示例等9项文件/较好示例/序章boss场景.png"
+
+[node name="Image1" type="Sprite2D" parent="Surface"]
+position = Vector2(0, 0)
+texture = ExtResource("1")
+centered = false

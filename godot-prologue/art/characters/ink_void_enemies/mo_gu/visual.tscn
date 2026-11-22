@@ -1,0 +1,218 @@
+[gd_scene load_steps=37 format=3]
+
+[ext_resource type="Script" path="../visual_driver.gd" id="driver"]
+
+[ext_resource type="Texture2D" path="iron_whip_dive.png" id="iron_whip_dive"]
+
+[ext_resource type="Texture2D" path="stele_stride.png" id="stele_stride"]
+
+[ext_resource type="Texture2D" path="wing_hover.png" id="wing_hover"]
+
+[ext_resource type="Texture2D" path="wing_glide.png" id="wing_glide"]
+
+[sub_resource type="AtlasTexture" id="Tex_iron_whip_dive_1"]
+atlas = ExtResource("iron_whip_dive")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_iron_whip_dive_2"]
+atlas = ExtResource("iron_whip_dive")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_iron_whip_dive_3"]
+atlas = ExtResource("iron_whip_dive")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_iron_whip_dive_4"]
+atlas = ExtResource("iron_whip_dive")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_iron_whip_dive_5"]
+atlas = ExtResource("iron_whip_dive")
+region = Rect2(0, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_iron_whip_dive_6"]
+atlas = ExtResource("iron_whip_dive")
+region = Rect2(512, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_iron_whip_dive_7"]
+atlas = ExtResource("iron_whip_dive")
+region = Rect2(1024, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_iron_whip_dive_8"]
+atlas = ExtResource("iron_whip_dive")
+region = Rect2(1536, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_stride_1"]
+atlas = ExtResource("stele_stride")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_stride_2"]
+atlas = ExtResource("stele_stride")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_stride_3"]
+atlas = ExtResource("stele_stride")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_stride_4"]
+atlas = ExtResource("stele_stride")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_stride_5"]
+atlas = ExtResource("stele_stride")
+region = Rect2(0, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_stride_6"]
+atlas = ExtResource("stele_stride")
+region = Rect2(512, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wing_hover_1"]
+atlas = ExtResource("wing_hover")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wing_hover_2"]
+atlas = ExtResource("wing_hover")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wing_hover_3"]
+atlas = ExtResource("wing_hover")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wing_hover_4"]
+atlas = ExtResource("wing_hover")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wing_glide_1"]
+atlas = ExtResource("wing_glide")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wing_glide_2"]
+atlas = ExtResource("wing_glide")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wing_glide_3"]
+atlas = ExtResource("wing_glide")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wing_glide_4"]
+atlas = ExtResource("wing_glide")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wing_glide_5"]
+atlas = ExtResource("wing_glide")
+region = Rect2(0, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wing_glide_6"]
+atlas = ExtResource("wing_glide")
+region = Rect2(512, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wing_glide_7"]
+atlas = ExtResource("wing_glide")
+region = Rect2(1024, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wing_glide_8"]
+atlas = ExtResource("wing_glide")
+region = Rect2(1536, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="Animation" id="Anim_iron_whip_dive"]
+resource_name = "iron_whip_dive"
+length = 0.800000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000, 0.600000, 0.700000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_iron_whip_dive_1"), SubResource("Tex_iron_whip_dive_2"), SubResource("Tex_iron_whip_dive_3"), SubResource("Tex_iron_whip_dive_4"), SubResource("Tex_iron_whip_dive_5"), SubResource("Tex_iron_whip_dive_6"), SubResource("Tex_iron_whip_dive_7"), SubResource("Tex_iron_whip_dive_8")]
+}
+
+[sub_resource type="Animation" id="Anim_stele_stride"]
+resource_name = "stele_stride"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_stele_stride_1"), SubResource("Tex_stele_stride_2"), SubResource("Tex_stele_stride_3"), SubResource("Tex_stele_stride_4"), SubResource("Tex_stele_stride_5"), SubResource("Tex_stele_stride_6")]
+}
+
+[sub_resource type="Animation" id="Anim_wing_hover"]
+resource_name = "wing_hover"
+length = 0.400000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_wing_hover_1"), SubResource("Tex_wing_hover_2"), SubResource("Tex_wing_hover_3"), SubResource("Tex_wing_hover_4")]
+}
+
+[sub_resource type="Animation" id="Anim_wing_glide"]
+resource_name = "wing_glide"
+length = 0.800000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000, 0.600000, 0.700000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_wing_glide_1"), SubResource("Tex_wing_glide_2"), SubResource("Tex_wing_glide_3"), SubResource("Tex_wing_glide_4"), SubResource("Tex_wing_glide_5"), SubResource("Tex_wing_glide_6"), SubResource("Tex_wing_glide_7"), SubResource("Tex_wing_glide_8")]
+}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {&"iron_whip_dive": SubResource("Anim_iron_whip_dive"),
+&"stele_stride": SubResource("Anim_stele_stride"),
+&"wing_hover": SubResource("Anim_wing_hover"),
+&"wing_glide": SubResource("Anim_wing_glide")}
+
+[node name="EnemyVisual" type="Node2D"]
+script = ExtResource("driver")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+offset = Vector2(0, -224)
+texture = SubResource("Tex_stele_stride_1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("Library")}
+autoplay = "stele_stride"

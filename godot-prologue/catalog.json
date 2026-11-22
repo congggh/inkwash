@@ -1,0 +1,126 @@
+[
+  {
+    "title": "0-01 死牢绝壁",
+    "scene": "res://scenes/acts/0-01.tscn"
+  },
+  {
+    "title": "0-02 绝壁天堑",
+    "scene": "res://scenes/acts/0-02.tscn"
+  },
+  {
+    "title": "0-03 生铁军械营",
+    "scene": "res://scenes/acts/0-03.tscn"
+  },
+  {
+    "title": "0-04 宿墨绞盘井",
+    "scene": "res://scenes/acts/0-04.tscn"
+  },
+  {
+    "title": "0-05 悬空墨桶",
+    "scene": "res://scenes/acts/0-05.tscn"
+  },
+  {
+    "title": "0-06 生铁长廊",
+    "scene": "res://scenes/acts/0-06.tscn"
+  },
+  {
+    "title": "0-07 百丈碑林裂隙",
+    "scene": "res://scenes/acts/0-07.tscn"
+  },
+  {
+    "title": "0-08 雷暴绝壁栈道",
+    "scene": "res://scenes/acts/0-08.tscn"
+  },
+  {
+    "title": "0-09 先锋营门",
+    "scene": "res://scenes/acts/0-09.tscn"
+  },
+  {
+    "title": "0-10 断云台死斗",
+    "scene": "res://scenes/acts/0-10.tscn"
+  },
+  {
+    "title": "0-T1 飞瀑洗血卷（失重垂直下坠）",
+    "scene": "res://scenes/acts/0-t1.tscn"
+  },
+  {
+    "title": "0-T2 飞瀑洗血卷（减速弧形滑行）",
+    "scene": "res://scenes/acts/0-t2.tscn"
+  },
+  {
+    "title": "逐幕过渡 · 0-01 至 0-02",
+    "scene": "res://scenes/connections/01.tscn"
+  },
+  {
+    "title": "逐幕过渡 · 0-02 至 0-03",
+    "scene": "res://scenes/connections/02.tscn"
+  },
+  {
+    "title": "逐幕过渡 · 0-03 至 0-04",
+    "scene": "res://scenes/connections/03.tscn"
+  },
+  {
+    "title": "逐幕过渡 · 0-04 至 0-05",
+    "scene": "res://scenes/connections/04.tscn"
+  },
+  {
+    "title": "逐幕过渡 · 0-05 至 0-06",
+    "scene": "res://scenes/connections/05.tscn"
+  },
+  {
+    "title": "逐幕过渡 · 0-06 至 0-07",
+    "scene": "res://scenes/connections/06.tscn"
+  },
+  {
+    "title": "逐幕过渡 · 0-07 至 0-08",
+    "scene": "res://scenes/connections/07.tscn"
+  },
+  {
+    "title": "逐幕过渡 · 0-08 至 0-09",
+    "scene": "res://scenes/connections/08.tscn"
+  },
+  {
+    "title": "逐幕过渡 · 0-09 至 0-10",
+    "scene": "res://scenes/connections/09.tscn"
+  },
+  {
+    "title": "逐幕过渡 · 0-10 至 0-T1",
+    "scene": "res://scenes/connections/10.tscn"
+  },
+  {
+    "title": "逐幕过渡 · 0-T1 至 0-T2",
+    "scene": "res://scenes/connections/11.tscn"
+  },
+  {
+    "title": "序章 连续长卷",
+    "scene": "res://scenes/scroll/01.tscn"
+  },
+  {
+    "title": "地形重构 · 0-08 雷暴绝壁栈道",
+    "scene": "res://scenes/terrain/01.tscn"
+  },
+  {
+    "title": "跑道重构 · 0-02 绝壁天堑",
+    "scene": "res://scenes/runway/01.tscn"
+  },
+  {
+    "title": "跑道重构 · 0-08 雷暴绝壁栈道",
+    "scene": "res://scenes/runway/02.tscn"
+  },
+  {
+    "title": "衔接样图 · 0-01 至 0-02",
+    "scene": "res://scenes/samples/01.tscn"
+  },
+  {
+    "title": "衔接样图 · 0-01 至 0-02 连续长卷",
+    "scene": "res://scenes/samples/02.tscn"
+  },
+  {
+    "title": "衔接样图 · 0-01、过渡层、0-02 三图拼接",
+    "scene": "res://scenes/samples/03.tscn"
+  },
+  {
+    "title": "参考 · 序章boss场景",
+    "scene": "res://scenes/references/01.tscn"
+  }
+]

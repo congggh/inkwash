@@ -1,0 +1,170 @@
+[gd_scene load_steps=29 format=3]
+
+[ext_resource type="Script" path="../visual_driver.gd" id="driver"]
+
+[ext_resource type="Texture2D" path="spear_thrust_ink_wall.png" id="spear_thrust_ink_wall"]
+
+[ext_resource type="Texture2D" path="spear_stride.png" id="spear_stride"]
+
+[ext_resource type="Texture2D" path="wave_surf.png" id="wave_surf"]
+
+[sub_resource type="AtlasTexture" id="Tex_spear_thrust_ink_wall_1"]
+atlas = ExtResource("spear_thrust_ink_wall")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spear_thrust_ink_wall_2"]
+atlas = ExtResource("spear_thrust_ink_wall")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spear_thrust_ink_wall_3"]
+atlas = ExtResource("spear_thrust_ink_wall")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spear_thrust_ink_wall_4"]
+atlas = ExtResource("spear_thrust_ink_wall")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spear_thrust_ink_wall_5"]
+atlas = ExtResource("spear_thrust_ink_wall")
+region = Rect2(0, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spear_thrust_ink_wall_6"]
+atlas = ExtResource("spear_thrust_ink_wall")
+region = Rect2(512, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spear_thrust_ink_wall_7"]
+atlas = ExtResource("spear_thrust_ink_wall")
+region = Rect2(1024, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spear_thrust_ink_wall_8"]
+atlas = ExtResource("spear_thrust_ink_wall")
+region = Rect2(1536, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spear_stride_1"]
+atlas = ExtResource("spear_stride")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spear_stride_2"]
+atlas = ExtResource("spear_stride")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spear_stride_3"]
+atlas = ExtResource("spear_stride")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spear_stride_4"]
+atlas = ExtResource("spear_stride")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spear_stride_5"]
+atlas = ExtResource("spear_stride")
+region = Rect2(0, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_spear_stride_6"]
+atlas = ExtResource("spear_stride")
+region = Rect2(512, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wave_surf_1"]
+atlas = ExtResource("wave_surf")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wave_surf_2"]
+atlas = ExtResource("wave_surf")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wave_surf_3"]
+atlas = ExtResource("wave_surf")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wave_surf_4"]
+atlas = ExtResource("wave_surf")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wave_surf_5"]
+atlas = ExtResource("wave_surf")
+region = Rect2(0, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_wave_surf_6"]
+atlas = ExtResource("wave_surf")
+region = Rect2(512, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="Animation" id="Anim_spear_thrust_ink_wall"]
+resource_name = "spear_thrust_ink_wall"
+length = 0.800000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000, 0.600000, 0.700000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_spear_thrust_ink_wall_1"), SubResource("Tex_spear_thrust_ink_wall_2"), SubResource("Tex_spear_thrust_ink_wall_3"), SubResource("Tex_spear_thrust_ink_wall_4"), SubResource("Tex_spear_thrust_ink_wall_5"), SubResource("Tex_spear_thrust_ink_wall_6"), SubResource("Tex_spear_thrust_ink_wall_7"), SubResource("Tex_spear_thrust_ink_wall_8")]
+}
+
+[sub_resource type="Animation" id="Anim_spear_stride"]
+resource_name = "spear_stride"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_spear_stride_1"), SubResource("Tex_spear_stride_2"), SubResource("Tex_spear_stride_3"), SubResource("Tex_spear_stride_4"), SubResource("Tex_spear_stride_5"), SubResource("Tex_spear_stride_6")]
+}
+
+[sub_resource type="Animation" id="Anim_wave_surf"]
+resource_name = "wave_surf"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_wave_surf_1"), SubResource("Tex_wave_surf_2"), SubResource("Tex_wave_surf_3"), SubResource("Tex_wave_surf_4"), SubResource("Tex_wave_surf_5"), SubResource("Tex_wave_surf_6")]
+}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {&"spear_thrust_ink_wall": SubResource("Anim_spear_thrust_ink_wall"),
+&"spear_stride": SubResource("Anim_spear_stride"),
+&"wave_surf": SubResource("Anim_wave_surf")}
+
+[node name="EnemyVisual" type="Node2D"]
+script = ExtResource("driver")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+offset = Vector2(0, -224)
+texture = SubResource("Tex_spear_stride_1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("Library")}
+autoplay = "spear_stride"

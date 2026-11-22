@@ -1,0 +1,160 @@
+[gd_scene load_steps=27 format=3]
+
+[ext_resource type="Script" path="../visual_driver.gd" id="driver"]
+
+[ext_resource type="Texture2D" path="scales_spill_balance_break.png" id="scales_spill_balance_break"]
+
+[ext_resource type="Texture2D" path="idle.png" id="idle"]
+
+[ext_resource type="Texture2D" path="scales_float.png" id="scales_float"]
+
+[sub_resource type="AtlasTexture" id="Tex_scales_spill_balance_break_1"]
+atlas = ExtResource("scales_spill_balance_break")
+region = Rect2(0, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scales_spill_balance_break_2"]
+atlas = ExtResource("scales_spill_balance_break")
+region = Rect2(448, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scales_spill_balance_break_3"]
+atlas = ExtResource("scales_spill_balance_break")
+region = Rect2(896, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scales_spill_balance_break_4"]
+atlas = ExtResource("scales_spill_balance_break")
+region = Rect2(1344, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scales_spill_balance_break_5"]
+atlas = ExtResource("scales_spill_balance_break")
+region = Rect2(0, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scales_spill_balance_break_6"]
+atlas = ExtResource("scales_spill_balance_break")
+region = Rect2(448, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scales_spill_balance_break_7"]
+atlas = ExtResource("scales_spill_balance_break")
+region = Rect2(896, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scales_spill_balance_break_8"]
+atlas = ExtResource("scales_spill_balance_break")
+region = Rect2(1344, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_1"]
+atlas = ExtResource("idle")
+region = Rect2(0, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_2"]
+atlas = ExtResource("idle")
+region = Rect2(448, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_3"]
+atlas = ExtResource("idle")
+region = Rect2(896, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_4"]
+atlas = ExtResource("idle")
+region = Rect2(1344, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scales_float_1"]
+atlas = ExtResource("scales_float")
+region = Rect2(0, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scales_float_2"]
+atlas = ExtResource("scales_float")
+region = Rect2(448, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scales_float_3"]
+atlas = ExtResource("scales_float")
+region = Rect2(896, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scales_float_4"]
+atlas = ExtResource("scales_float")
+region = Rect2(1344, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scales_float_5"]
+atlas = ExtResource("scales_float")
+region = Rect2(0, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_scales_float_6"]
+atlas = ExtResource("scales_float")
+region = Rect2(448, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="Animation" id="Anim_scales_spill_balance_break"]
+resource_name = "scales_spill_balance_break"
+length = 0.800000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000, 0.600000, 0.700000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_scales_spill_balance_break_1"), SubResource("Tex_scales_spill_balance_break_2"), SubResource("Tex_scales_spill_balance_break_3"), SubResource("Tex_scales_spill_balance_break_4"), SubResource("Tex_scales_spill_balance_break_5"), SubResource("Tex_scales_spill_balance_break_6"), SubResource("Tex_scales_spill_balance_break_7"), SubResource("Tex_scales_spill_balance_break_8")]
+}
+
+[sub_resource type="Animation" id="Anim_idle"]
+resource_name = "idle"
+length = 0.400000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_idle_1"), SubResource("Tex_idle_2"), SubResource("Tex_idle_3"), SubResource("Tex_idle_4")]
+}
+
+[sub_resource type="Animation" id="Anim_scales_float"]
+resource_name = "scales_float"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_scales_float_1"), SubResource("Tex_scales_float_2"), SubResource("Tex_scales_float_3"), SubResource("Tex_scales_float_4"), SubResource("Tex_scales_float_5"), SubResource("Tex_scales_float_6")]
+}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {&"scales_spill_balance_break": SubResource("Anim_scales_spill_balance_break"),
+&"idle": SubResource("Anim_idle"),
+&"scales_float": SubResource("Anim_scales_float")}
+
+[node name="EnemyVisual" type="Node2D"]
+script = ExtResource("driver")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+offset = Vector2(0, -192)
+texture = SubResource("Tex_idle_1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("Library")}
+autoplay = "idle"
