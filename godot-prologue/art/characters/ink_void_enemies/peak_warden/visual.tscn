@@ -1,0 +1,150 @@
+[gd_scene load_steps=25 format=3]
+
+[ext_resource type="Script" path="../visual_driver.gd" id="driver"]
+
+[ext_resource type="Texture2D" path="shield_charge_armor_peel.png" id="shield_charge_armor_peel"]
+
+[ext_resource type="Texture2D" path="idle.png" id="idle"]
+
+[ext_resource type="Texture2D" path="shield_step.png" id="shield_step"]
+
+[sub_resource type="AtlasTexture" id="Tex_shield_charge_armor_peel_1"]
+atlas = ExtResource("shield_charge_armor_peel")
+region = Rect2(0, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_shield_charge_armor_peel_2"]
+atlas = ExtResource("shield_charge_armor_peel")
+region = Rect2(448, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_shield_charge_armor_peel_3"]
+atlas = ExtResource("shield_charge_armor_peel")
+region = Rect2(896, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_shield_charge_armor_peel_4"]
+atlas = ExtResource("shield_charge_armor_peel")
+region = Rect2(1344, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_shield_charge_armor_peel_5"]
+atlas = ExtResource("shield_charge_armor_peel")
+region = Rect2(0, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_shield_charge_armor_peel_6"]
+atlas = ExtResource("shield_charge_armor_peel")
+region = Rect2(448, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_1"]
+atlas = ExtResource("idle")
+region = Rect2(0, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_2"]
+atlas = ExtResource("idle")
+region = Rect2(448, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_3"]
+atlas = ExtResource("idle")
+region = Rect2(896, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_4"]
+atlas = ExtResource("idle")
+region = Rect2(1344, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_shield_step_1"]
+atlas = ExtResource("shield_step")
+region = Rect2(0, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_shield_step_2"]
+atlas = ExtResource("shield_step")
+region = Rect2(448, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_shield_step_3"]
+atlas = ExtResource("shield_step")
+region = Rect2(896, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_shield_step_4"]
+atlas = ExtResource("shield_step")
+region = Rect2(1344, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_shield_step_5"]
+atlas = ExtResource("shield_step")
+region = Rect2(0, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_shield_step_6"]
+atlas = ExtResource("shield_step")
+region = Rect2(448, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="Animation" id="Anim_shield_charge_armor_peel"]
+resource_name = "shield_charge_armor_peel"
+length = 0.600000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_shield_charge_armor_peel_1"), SubResource("Tex_shield_charge_armor_peel_2"), SubResource("Tex_shield_charge_armor_peel_3"), SubResource("Tex_shield_charge_armor_peel_4"), SubResource("Tex_shield_charge_armor_peel_5"), SubResource("Tex_shield_charge_armor_peel_6")]
+}
+
+[sub_resource type="Animation" id="Anim_idle"]
+resource_name = "idle"
+length = 0.400000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_idle_1"), SubResource("Tex_idle_2"), SubResource("Tex_idle_3"), SubResource("Tex_idle_4")]
+}
+
+[sub_resource type="Animation" id="Anim_shield_step"]
+resource_name = "shield_step"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_shield_step_1"), SubResource("Tex_shield_step_2"), SubResource("Tex_shield_step_3"), SubResource("Tex_shield_step_4"), SubResource("Tex_shield_step_5"), SubResource("Tex_shield_step_6")]
+}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {&"shield_charge_armor_peel": SubResource("Anim_shield_charge_armor_peel"),
+&"idle": SubResource("Anim_idle"),
+&"shield_step": SubResource("Anim_shield_step")}
+
+[node name="EnemyVisual" type="Node2D"]
+script = ExtResource("driver")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+offset = Vector2(0, -192)
+texture = SubResource("Tex_idle_1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("Library")}
+autoplay = "idle"

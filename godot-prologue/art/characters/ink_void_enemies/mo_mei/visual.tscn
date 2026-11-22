@@ -1,0 +1,241 @@
+[gd_scene load_steps=40 format=3]
+
+[ext_resource type="Script" path="../visual_driver.gd" id="driver"]
+
+[ext_resource type="Texture2D" path="plum_lunge_phase_change.png" id="plum_lunge_phase_change"]
+
+[ext_resource type="Texture2D" path="idle.png" id="idle"]
+
+[ext_resource type="Texture2D" path="plum_glide.png" id="plum_glide"]
+
+[ext_resource type="Texture2D" path="thorn_dash.png" id="thorn_dash"]
+
+[ext_resource type="Texture2D" path="baimiao_stagger.png" id="baimiao_stagger"]
+
+[sub_resource type="AtlasTexture" id="Tex_plum_lunge_phase_change_1"]
+atlas = ExtResource("plum_lunge_phase_change")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_plum_lunge_phase_change_2"]
+atlas = ExtResource("plum_lunge_phase_change")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_plum_lunge_phase_change_3"]
+atlas = ExtResource("plum_lunge_phase_change")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_plum_lunge_phase_change_4"]
+atlas = ExtResource("plum_lunge_phase_change")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_plum_lunge_phase_change_5"]
+atlas = ExtResource("plum_lunge_phase_change")
+region = Rect2(0, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_plum_lunge_phase_change_6"]
+atlas = ExtResource("plum_lunge_phase_change")
+region = Rect2(512, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_plum_lunge_phase_change_7"]
+atlas = ExtResource("plum_lunge_phase_change")
+region = Rect2(1024, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_1"]
+atlas = ExtResource("idle")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_2"]
+atlas = ExtResource("idle")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_3"]
+atlas = ExtResource("idle")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_4"]
+atlas = ExtResource("idle")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_plum_glide_1"]
+atlas = ExtResource("plum_glide")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_plum_glide_2"]
+atlas = ExtResource("plum_glide")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_plum_glide_3"]
+atlas = ExtResource("plum_glide")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_plum_glide_4"]
+atlas = ExtResource("plum_glide")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_plum_glide_5"]
+atlas = ExtResource("plum_glide")
+region = Rect2(0, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_plum_glide_6"]
+atlas = ExtResource("plum_glide")
+region = Rect2(512, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_thorn_dash_1"]
+atlas = ExtResource("thorn_dash")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_thorn_dash_2"]
+atlas = ExtResource("thorn_dash")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_thorn_dash_3"]
+atlas = ExtResource("thorn_dash")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_thorn_dash_4"]
+atlas = ExtResource("thorn_dash")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_thorn_dash_5"]
+atlas = ExtResource("thorn_dash")
+region = Rect2(0, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_thorn_dash_6"]
+atlas = ExtResource("thorn_dash")
+region = Rect2(512, 448, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_baimiao_stagger_1"]
+atlas = ExtResource("baimiao_stagger")
+region = Rect2(0, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_baimiao_stagger_2"]
+atlas = ExtResource("baimiao_stagger")
+region = Rect2(512, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_baimiao_stagger_3"]
+atlas = ExtResource("baimiao_stagger")
+region = Rect2(1024, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_baimiao_stagger_4"]
+atlas = ExtResource("baimiao_stagger")
+region = Rect2(1536, 0, 512, 448)
+filter_clip = true
+
+[sub_resource type="Animation" id="Anim_plum_lunge_phase_change"]
+resource_name = "plum_lunge_phase_change"
+length = 0.700000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000, 0.600000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_plum_lunge_phase_change_1"), SubResource("Tex_plum_lunge_phase_change_2"), SubResource("Tex_plum_lunge_phase_change_3"), SubResource("Tex_plum_lunge_phase_change_4"), SubResource("Tex_plum_lunge_phase_change_5"), SubResource("Tex_plum_lunge_phase_change_6"), SubResource("Tex_plum_lunge_phase_change_7")]
+}
+
+[sub_resource type="Animation" id="Anim_idle"]
+resource_name = "idle"
+length = 0.400000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_idle_1"), SubResource("Tex_idle_2"), SubResource("Tex_idle_3"), SubResource("Tex_idle_4")]
+}
+
+[sub_resource type="Animation" id="Anim_plum_glide"]
+resource_name = "plum_glide"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_plum_glide_1"), SubResource("Tex_plum_glide_2"), SubResource("Tex_plum_glide_3"), SubResource("Tex_plum_glide_4"), SubResource("Tex_plum_glide_5"), SubResource("Tex_plum_glide_6")]
+}
+
+[sub_resource type="Animation" id="Anim_thorn_dash"]
+resource_name = "thorn_dash"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_thorn_dash_1"), SubResource("Tex_thorn_dash_2"), SubResource("Tex_thorn_dash_3"), SubResource("Tex_thorn_dash_4"), SubResource("Tex_thorn_dash_5"), SubResource("Tex_thorn_dash_6")]
+}
+
+[sub_resource type="Animation" id="Anim_baimiao_stagger"]
+resource_name = "baimiao_stagger"
+length = 0.400000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_baimiao_stagger_1"), SubResource("Tex_baimiao_stagger_2"), SubResource("Tex_baimiao_stagger_3"), SubResource("Tex_baimiao_stagger_4")]
+}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {&"plum_lunge_phase_change": SubResource("Anim_plum_lunge_phase_change"),
+&"idle": SubResource("Anim_idle"),
+&"plum_glide": SubResource("Anim_plum_glide"),
+&"thorn_dash": SubResource("Anim_thorn_dash"),
+&"baimiao_stagger": SubResource("Anim_baimiao_stagger")}
+
+[node name="EnemyVisual" type="Node2D"]
+script = ExtResource("driver")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+offset = Vector2(0, -224)
+texture = SubResource("Tex_idle_1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("Library")}
+autoplay = "idle"

@@ -1,0 +1,89 @@
+[gd_resource type="SpriteFrames" load_steps=18 format=3]
+
+[ext_resource type="Texture2D" path="res://art/characters/mohen_animations/ink_effects.png" id="ink"]
+
+[sub_resource type="AtlasTexture" id="sweep_0"]
+atlas = ExtResource("ink")
+region = Rect2(0, 0, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="sweep_1"]
+atlas = ExtResource("ink")
+region = Rect2(360, 0, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="sweep_2"]
+atlas = ExtResource("ink")
+region = Rect2(720, 0, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="sweep_3"]
+atlas = ExtResource("ink")
+region = Rect2(1080, 0, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="rise_0"]
+atlas = ExtResource("ink")
+region = Rect2(0, 360, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="rise_1"]
+atlas = ExtResource("ink")
+region = Rect2(360, 360, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="rise_2"]
+atlas = ExtResource("ink")
+region = Rect2(720, 360, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="rise_3"]
+atlas = ExtResource("ink")
+region = Rect2(1080, 360, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="cleave_0"]
+atlas = ExtResource("ink")
+region = Rect2(0, 720, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="cleave_1"]
+atlas = ExtResource("ink")
+region = Rect2(360, 720, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="cleave_2"]
+atlas = ExtResource("ink")
+region = Rect2(720, 720, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="cleave_3"]
+atlas = ExtResource("ink")
+region = Rect2(1080, 720, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="air_0"]
+atlas = ExtResource("ink")
+region = Rect2(0, 1080, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="air_1"]
+atlas = ExtResource("ink")
+region = Rect2(360, 1080, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="air_2"]
+atlas = ExtResource("ink")
+region = Rect2(720, 1080, 360, 360)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="air_3"]
+atlas = ExtResource("ink")
+region = Rect2(1080, 1080, 360, 360)
+filter_clip = true
+
+[resource]
+animations = [{"frames": [{"duration": 0.028, "texture": SubResource("sweep_0")}, {"duration": 0.051, "texture": SubResource("sweep_1")}, {"duration": 0.063, "texture": SubResource("sweep_2")}, {"duration": 0.086, "texture": SubResource("sweep_3")}], "loop": false, "name": &"sweep", "speed": 1.0},
+{"frames": [{"duration": 0.032, "texture": SubResource("rise_0")}, {"duration": 0.053, "texture": SubResource("rise_1")}, {"duration": 0.070, "texture": SubResource("rise_2")}, {"duration": 0.088, "texture": SubResource("rise_3")}], "loop": false, "name": &"rise", "speed": 1.0},
+{"frames": [{"duration": 0.032, "texture": SubResource("cleave_0")}, {"duration": 0.064, "texture": SubResource("cleave_1")}, {"duration": 0.083, "texture": SubResource("cleave_2")}, {"duration": 0.104, "texture": SubResource("cleave_3")}], "loop": false, "name": &"cleave", "speed": 1.0},
+{"frames": [{"duration": 0.034, "texture": SubResource("air_0")}, {"duration": 0.054, "texture": SubResource("air_1")}, {"duration": 0.073, "texture": SubResource("air_2")}, {"duration": 0.098, "texture": SubResource("air_3")}], "loop": false, "name": &"air", "speed": 1.0}]

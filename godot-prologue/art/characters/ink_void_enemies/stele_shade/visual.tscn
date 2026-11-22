@@ -1,0 +1,208 @@
+[gd_scene load_steps=35 format=3]
+
+[ext_resource type="Script" path="../visual_driver.gd" id="driver"]
+
+[ext_resource type="Texture2D" path="stele_chop.png" id="stele_chop"]
+
+[ext_resource type="Texture2D" path="idle.png" id="idle"]
+
+[ext_resource type="Texture2D" path="stele_walk.png" id="stele_walk"]
+
+[ext_resource type="Texture2D" path="ground_rush.png" id="ground_rush"]
+
+[sub_resource type="AtlasTexture" id="Tex_stele_chop_1"]
+atlas = ExtResource("stele_chop")
+region = Rect2(0, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_chop_2"]
+atlas = ExtResource("stele_chop")
+region = Rect2(320, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_chop_3"]
+atlas = ExtResource("stele_chop")
+region = Rect2(640, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_chop_4"]
+atlas = ExtResource("stele_chop")
+region = Rect2(960, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_chop_5"]
+atlas = ExtResource("stele_chop")
+region = Rect2(0, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_chop_6"]
+atlas = ExtResource("stele_chop")
+region = Rect2(320, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_chop_7"]
+atlas = ExtResource("stele_chop")
+region = Rect2(640, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_chop_8"]
+atlas = ExtResource("stele_chop")
+region = Rect2(960, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_1"]
+atlas = ExtResource("idle")
+region = Rect2(0, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_2"]
+atlas = ExtResource("idle")
+region = Rect2(320, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_3"]
+atlas = ExtResource("idle")
+region = Rect2(640, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_4"]
+atlas = ExtResource("idle")
+region = Rect2(960, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_walk_1"]
+atlas = ExtResource("stele_walk")
+region = Rect2(0, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_walk_2"]
+atlas = ExtResource("stele_walk")
+region = Rect2(320, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_walk_3"]
+atlas = ExtResource("stele_walk")
+region = Rect2(640, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_walk_4"]
+atlas = ExtResource("stele_walk")
+region = Rect2(960, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_walk_5"]
+atlas = ExtResource("stele_walk")
+region = Rect2(0, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_stele_walk_6"]
+atlas = ExtResource("stele_walk")
+region = Rect2(320, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ground_rush_1"]
+atlas = ExtResource("ground_rush")
+region = Rect2(0, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ground_rush_2"]
+atlas = ExtResource("ground_rush")
+region = Rect2(320, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ground_rush_3"]
+atlas = ExtResource("ground_rush")
+region = Rect2(640, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ground_rush_4"]
+atlas = ExtResource("ground_rush")
+region = Rect2(960, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ground_rush_5"]
+atlas = ExtResource("ground_rush")
+region = Rect2(0, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ground_rush_6"]
+atlas = ExtResource("ground_rush")
+region = Rect2(320, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="Animation" id="Anim_stele_chop"]
+resource_name = "stele_chop"
+length = 0.800000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000, 0.600000, 0.700000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_stele_chop_1"), SubResource("Tex_stele_chop_2"), SubResource("Tex_stele_chop_3"), SubResource("Tex_stele_chop_4"), SubResource("Tex_stele_chop_5"), SubResource("Tex_stele_chop_6"), SubResource("Tex_stele_chop_7"), SubResource("Tex_stele_chop_8")]
+}
+
+[sub_resource type="Animation" id="Anim_idle"]
+resource_name = "idle"
+length = 0.800000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.200000, 0.400000, 0.600000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_idle_1"), SubResource("Tex_idle_2"), SubResource("Tex_idle_3"), SubResource("Tex_idle_4")]
+}
+
+[sub_resource type="Animation" id="Anim_stele_walk"]
+resource_name = "stele_walk"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_stele_walk_1"), SubResource("Tex_stele_walk_2"), SubResource("Tex_stele_walk_3"), SubResource("Tex_stele_walk_4"), SubResource("Tex_stele_walk_5"), SubResource("Tex_stele_walk_6")]
+}
+
+[sub_resource type="Animation" id="Anim_ground_rush"]
+resource_name = "ground_rush"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_ground_rush_1"), SubResource("Tex_ground_rush_2"), SubResource("Tex_ground_rush_3"), SubResource("Tex_ground_rush_4"), SubResource("Tex_ground_rush_5"), SubResource("Tex_ground_rush_6")]
+}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {&"stele_chop": SubResource("Anim_stele_chop"),
+&"idle": SubResource("Anim_idle"),
+&"stele_walk": SubResource("Anim_stele_walk"),
+&"ground_rush": SubResource("Anim_ground_rush")}
+
+[node name="EnemyVisual" type="Node2D"]
+script = ExtResource("driver")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+offset = Vector2(0, -160)
+texture = SubResource("Tex_idle_1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("Library")}
+autoplay = "idle"

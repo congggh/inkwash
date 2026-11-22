@@ -1,0 +1,208 @@
+[gd_scene load_steps=35 format=3]
+
+[ext_resource type="Script" path="../visual_driver.gd" id="driver"]
+
+[ext_resource type="Texture2D" path="ruler_cleave_armor_peel.png" id="ruler_cleave_armor_peel"]
+
+[ext_resource type="Texture2D" path="idle.png" id="idle"]
+
+[ext_resource type="Texture2D" path="ruler_drag.png" id="ruler_drag"]
+
+[ext_resource type="Texture2D" path="rush.png" id="rush"]
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_cleave_armor_peel_1"]
+atlas = ExtResource("ruler_cleave_armor_peel")
+region = Rect2(0, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_cleave_armor_peel_2"]
+atlas = ExtResource("ruler_cleave_armor_peel")
+region = Rect2(320, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_cleave_armor_peel_3"]
+atlas = ExtResource("ruler_cleave_armor_peel")
+region = Rect2(640, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_cleave_armor_peel_4"]
+atlas = ExtResource("ruler_cleave_armor_peel")
+region = Rect2(960, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_cleave_armor_peel_5"]
+atlas = ExtResource("ruler_cleave_armor_peel")
+region = Rect2(0, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_cleave_armor_peel_6"]
+atlas = ExtResource("ruler_cleave_armor_peel")
+region = Rect2(320, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_cleave_armor_peel_7"]
+atlas = ExtResource("ruler_cleave_armor_peel")
+region = Rect2(640, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_cleave_armor_peel_8"]
+atlas = ExtResource("ruler_cleave_armor_peel")
+region = Rect2(960, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_1"]
+atlas = ExtResource("idle")
+region = Rect2(0, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_2"]
+atlas = ExtResource("idle")
+region = Rect2(320, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_3"]
+atlas = ExtResource("idle")
+region = Rect2(640, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_4"]
+atlas = ExtResource("idle")
+region = Rect2(960, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_drag_1"]
+atlas = ExtResource("ruler_drag")
+region = Rect2(0, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_drag_2"]
+atlas = ExtResource("ruler_drag")
+region = Rect2(320, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_drag_3"]
+atlas = ExtResource("ruler_drag")
+region = Rect2(640, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_drag_4"]
+atlas = ExtResource("ruler_drag")
+region = Rect2(960, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_drag_5"]
+atlas = ExtResource("ruler_drag")
+region = Rect2(0, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ruler_drag_6"]
+atlas = ExtResource("ruler_drag")
+region = Rect2(320, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rush_1"]
+atlas = ExtResource("rush")
+region = Rect2(0, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rush_2"]
+atlas = ExtResource("rush")
+region = Rect2(320, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rush_3"]
+atlas = ExtResource("rush")
+region = Rect2(640, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rush_4"]
+atlas = ExtResource("rush")
+region = Rect2(960, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rush_5"]
+atlas = ExtResource("rush")
+region = Rect2(0, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_rush_6"]
+atlas = ExtResource("rush")
+region = Rect2(320, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="Animation" id="Anim_ruler_cleave_armor_peel"]
+resource_name = "ruler_cleave_armor_peel"
+length = 0.800000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000, 0.600000, 0.700000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_ruler_cleave_armor_peel_1"), SubResource("Tex_ruler_cleave_armor_peel_2"), SubResource("Tex_ruler_cleave_armor_peel_3"), SubResource("Tex_ruler_cleave_armor_peel_4"), SubResource("Tex_ruler_cleave_armor_peel_5"), SubResource("Tex_ruler_cleave_armor_peel_6"), SubResource("Tex_ruler_cleave_armor_peel_7"), SubResource("Tex_ruler_cleave_armor_peel_8")]
+}
+
+[sub_resource type="Animation" id="Anim_idle"]
+resource_name = "idle"
+length = 0.800000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.200000, 0.400000, 0.600000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_idle_1"), SubResource("Tex_idle_2"), SubResource("Tex_idle_3"), SubResource("Tex_idle_4")]
+}
+
+[sub_resource type="Animation" id="Anim_ruler_drag"]
+resource_name = "ruler_drag"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_ruler_drag_1"), SubResource("Tex_ruler_drag_2"), SubResource("Tex_ruler_drag_3"), SubResource("Tex_ruler_drag_4"), SubResource("Tex_ruler_drag_5"), SubResource("Tex_ruler_drag_6")]
+}
+
+[sub_resource type="Animation" id="Anim_rush"]
+resource_name = "rush"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_rush_1"), SubResource("Tex_rush_2"), SubResource("Tex_rush_3"), SubResource("Tex_rush_4"), SubResource("Tex_rush_5"), SubResource("Tex_rush_6")]
+}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {&"ruler_cleave_armor_peel": SubResource("Anim_ruler_cleave_armor_peel"),
+&"idle": SubResource("Anim_idle"),
+&"ruler_drag": SubResource("Anim_ruler_drag"),
+&"rush": SubResource("Anim_rush")}
+
+[node name="EnemyVisual" type="Node2D"]
+script = ExtResource("driver")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+offset = Vector2(0, -160)
+texture = SubResource("Tex_idle_1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("Library")}
+autoplay = "idle"

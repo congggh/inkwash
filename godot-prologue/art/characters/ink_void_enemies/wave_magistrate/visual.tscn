@@ -1,0 +1,160 @@
+[gd_scene load_steps=27 format=3]
+
+[ext_resource type="Script" path="../visual_driver.gd" id="driver"]
+
+[ext_resource type="Texture2D" path="screen_wave_screen_peel.png" id="screen_wave_screen_peel"]
+
+[ext_resource type="Texture2D" path="idle.png" id="idle"]
+
+[ext_resource type="Texture2D" path="marionette_walk.png" id="marionette_walk"]
+
+[sub_resource type="AtlasTexture" id="Tex_screen_wave_screen_peel_1"]
+atlas = ExtResource("screen_wave_screen_peel")
+region = Rect2(0, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_screen_wave_screen_peel_2"]
+atlas = ExtResource("screen_wave_screen_peel")
+region = Rect2(448, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_screen_wave_screen_peel_3"]
+atlas = ExtResource("screen_wave_screen_peel")
+region = Rect2(896, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_screen_wave_screen_peel_4"]
+atlas = ExtResource("screen_wave_screen_peel")
+region = Rect2(1344, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_screen_wave_screen_peel_5"]
+atlas = ExtResource("screen_wave_screen_peel")
+region = Rect2(0, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_screen_wave_screen_peel_6"]
+atlas = ExtResource("screen_wave_screen_peel")
+region = Rect2(448, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_screen_wave_screen_peel_7"]
+atlas = ExtResource("screen_wave_screen_peel")
+region = Rect2(896, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_screen_wave_screen_peel_8"]
+atlas = ExtResource("screen_wave_screen_peel")
+region = Rect2(1344, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_1"]
+atlas = ExtResource("idle")
+region = Rect2(0, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_2"]
+atlas = ExtResource("idle")
+region = Rect2(448, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_3"]
+atlas = ExtResource("idle")
+region = Rect2(896, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_4"]
+atlas = ExtResource("idle")
+region = Rect2(1344, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_marionette_walk_1"]
+atlas = ExtResource("marionette_walk")
+region = Rect2(0, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_marionette_walk_2"]
+atlas = ExtResource("marionette_walk")
+region = Rect2(448, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_marionette_walk_3"]
+atlas = ExtResource("marionette_walk")
+region = Rect2(896, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_marionette_walk_4"]
+atlas = ExtResource("marionette_walk")
+region = Rect2(1344, 0, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_marionette_walk_5"]
+atlas = ExtResource("marionette_walk")
+region = Rect2(0, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_marionette_walk_6"]
+atlas = ExtResource("marionette_walk")
+region = Rect2(448, 384, 448, 384)
+filter_clip = true
+
+[sub_resource type="Animation" id="Anim_screen_wave_screen_peel"]
+resource_name = "screen_wave_screen_peel"
+length = 0.800000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000, 0.600000, 0.700000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_screen_wave_screen_peel_1"), SubResource("Tex_screen_wave_screen_peel_2"), SubResource("Tex_screen_wave_screen_peel_3"), SubResource("Tex_screen_wave_screen_peel_4"), SubResource("Tex_screen_wave_screen_peel_5"), SubResource("Tex_screen_wave_screen_peel_6"), SubResource("Tex_screen_wave_screen_peel_7"), SubResource("Tex_screen_wave_screen_peel_8")]
+}
+
+[sub_resource type="Animation" id="Anim_idle"]
+resource_name = "idle"
+length = 0.400000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_idle_1"), SubResource("Tex_idle_2"), SubResource("Tex_idle_3"), SubResource("Tex_idle_4")]
+}
+
+[sub_resource type="Animation" id="Anim_marionette_walk"]
+resource_name = "marionette_walk"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_marionette_walk_1"), SubResource("Tex_marionette_walk_2"), SubResource("Tex_marionette_walk_3"), SubResource("Tex_marionette_walk_4"), SubResource("Tex_marionette_walk_5"), SubResource("Tex_marionette_walk_6")]
+}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {&"screen_wave_screen_peel": SubResource("Anim_screen_wave_screen_peel"),
+&"idle": SubResource("Anim_idle"),
+&"marionette_walk": SubResource("Anim_marionette_walk")}
+
+[node name="EnemyVisual" type="Node2D"]
+script = ExtResource("driver")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+offset = Vector2(0, -192)
+texture = SubResource("Tex_idle_1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("Library")}
+autoplay = "idle"

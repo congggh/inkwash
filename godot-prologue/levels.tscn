@@ -1,0 +1,128 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://levels.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/characters/MoHen.tscn" id="2"]
+
+[ext_resource type="Script" path="res://rift_trial.gd" id="3_trial"]
+
+[ext_resource type="PackedScene" path="res://art/characters/mohen_sop4/mohen_visual_2d.tscn" id="4_import"]
+[ext_resource type="Script" path="res://background/red_rain.gd" id="5_rain"]
+
+[ext_resource type="Script" path="res://prologue_challenges.gd" id="challenges"]
+
+[sub_resource type="StyleBoxFlat" id="HudBackground"]
+content_margin_left = 14.0
+content_margin_top = 10.0
+content_margin_right = 14.0
+content_margin_bottom = 10.0
+bg_color = Color(0.07, 0.058, 0.05, 0.88)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="ScrollLevels" type="Node2D"]
+script = ExtResource("1")
+
+[node name="Scenery" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="FarRain" type="Node2D" parent="."]
+script = ExtResource("5_rain")
+
+[node name="RiftTrial" type="Node2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 1
+script = ExtResource("3_trial")
+
+[node name="PrologueChallenges" type="Node2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 1
+script = ExtResource("challenges")
+
+[node name="Player" type="Node2D" parent="."]
+unique_name_in_owner = true
+z_index = 2
+
+[node name="ContactShadow" type="Polygon2D" parent="Player"]
+color = Color(0.05, 0.04, 0.035, 0.32)
+polygon = PackedVector2Array(-39, 0, -31, -4, -16, -7, 14, -7, 31, -4, 39, 0, 31, 4, 14, 7, -16, 7, -31, 4)
+
+[node name="MoHen" parent="Player" instance=ExtResource("2")]
+unique_name_in_owner = true
+scale = Vector2(0.3, 0.3)
+
+[node name="TrialVisual" type="Node2D" parent="Player"]
+unique_name_in_owner = true
+visible = false
+scale = Vector2(0.48, 0.48)
+
+[node name="MoHen" parent="Player/TrialVisual" instance=ExtResource("4_import")]
+
+[node name="NearRain" type="Node2D" parent="."]
+z_index = 3
+script = ExtResource("5_rain")
+foreground = true
+
+[node name="Camera" type="Camera2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, 411)
+process_callback = 0
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Margins" type="MarginContainer" parent="HUD"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 14
+
+[node name="Panel" type="PanelContainer" parent="HUD/Margins"]
+mouse_filter = 2
+theme_override_styles/panel = SubResource("HudBackground")
+
+[node name="Rows" type="VBoxContainer" parent="HUD/Margins/Panel"]
+mouse_filter = 2
+theme_override_constants/separation = 5
+
+[node name="Navigation" type="HBoxContainer" parent="HUD/Margins/Panel/Rows"]
+mouse_filter = 2
+theme_override_constants/separation = 10
+
+[node name="Chapter" type="Label" parent="HUD/Margins/Panel/Rows/Navigation"]
+text = "序章 · 赤朱残阳"
+
+[node name="CurrentScene" type="Label" parent="HUD/Margins/Panel/Rows/Navigation"]
+unique_name_in_owner = true
+size_flags_horizontal = 3
+text_overrun_behavior = 3
+theme_override_colors/font_color = Color(0.96, 0.88, 0.76, 1)
+theme_override_font_sizes/font_size = 19
+
+[node name="Transport" type="Button" parent="HUD/Margins/Panel/Rows/Navigation"]
+unique_name_in_owner = true
+visible = false
+focus_mode = 0
+flat = true
+text = "暂停"
+
+[node name="TrialHint" type="Label" parent="HUD/Margins/Panel/Rows"]
+unique_name_in_owner = true
+visible = false
+theme_override_colors/font_color = Color(0.71, 1, 0.91, 1)
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 3
+
+[node name="Controls" type="Label" parent="HUD/Margins/Panel/Rows"]
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(0.82, 0.77, 0.7, 1)
+theme_override_font_sizes/font_size = 14
+text = "A / D 或 ← / → 移动    空格 跳跃    J 出刀    Tab 切换表里层"

@@ -1,0 +1,916 @@
+{
+  "source": "留白_角色序列帧/帧序列.json",
+  "pixelSize": 0.01,
+  "camera": {
+    "pitchDegrees": -15,
+    "fovDegrees": 36
+  },
+  "characters": {
+    "blind_patrol": {
+      "label": "盲眼巡卒",
+      "kind": "mob",
+      "chapter": 0,
+      "scene": "blind_patrol/visual.tscn",
+      "cellSize": [
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        320
+      ],
+      "default": "idle",
+      "clips": {
+        "ruler_cleave_armor_peel": {
+          "label": "戒尺前劈与外甲剥离",
+          "atlas": "blind_patrol/ruler_cleave_armor_peel.png",
+          "frameCount": 8,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": false,
+          "timingSource": "source_preview"
+        },
+        "idle": {
+          "label": "听声待机",
+          "atlas": "blind_patrol/idle.png",
+          "frameCount": 4,
+          "columns": 4,
+          "frameDurationsMs": [
+            200,
+            200,
+            200,
+            200
+          ],
+          "loop": true,
+          "timingSource": "design_document"
+        },
+        "ruler_drag": {
+          "label": "拖尺木偶步",
+          "atlas": "blind_patrol/ruler_drag.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "rush": {
+          "label": "前倾急趋步",
+          "atlas": "blind_patrol/rush.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        }
+      }
+    },
+    "peak_warden": {
+      "label": "镇峰狱尉",
+      "kind": "elite",
+      "chapter": 0,
+      "scene": "peak_warden/visual.tscn",
+      "cellSize": [
+        448,
+        384
+      ],
+      "anchor": [
+        224,
+        384
+      ],
+      "default": "idle",
+      "clips": {
+        "shield_charge_armor_peel": {
+          "label": "金石盾冲与虚线撕甲",
+          "atlas": "peak_warden/shield_charge_armor_peel.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": false,
+          "timingSource": "source_preview"
+        },
+        "idle": {
+          "label": "威压待机",
+          "atlas": "peak_warden/idle.png",
+          "frameCount": 4,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "shield_step": {
+          "label": "侧身横推蟹步",
+          "atlas": "peak_warden/shield_step.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        }
+      }
+    },
+    "mo_mei": {
+      "label": "墨梅",
+      "kind": "boss",
+      "chapter": 0,
+      "scene": "mo_mei/visual.tscn",
+      "cellSize": [
+        512,
+        448
+      ],
+      "anchor": [
+        256,
+        448
+      ],
+      "default": "idle",
+      "clips": {
+        "plum_lunge_phase_change": {
+          "label": "落梅突刺与三阶段蜕变",
+          "atlas": "mo_mei/plum_lunge_phase_change.png",
+          "frameCount": 7,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": false,
+          "timingSource": "source_preview"
+        },
+        "idle": {
+          "label": "剑客待机",
+          "atlas": "mo_mei/idle.png",
+          "frameCount": 4,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "plum_glide": {
+          "label": "寒梅滑步",
+          "atlas": "mo_mei/plum_glide.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "thorn_dash": {
+          "label": "焦墨梅枝疾掠",
+          "atlas": "mo_mei/thorn_dash.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "baimiao_stagger": {
+          "label": "白描真身踉跄",
+          "atlas": "mo_mei/baimiao_stagger.png",
+          "frameCount": 4,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": false,
+          "timingSource": "source_preview"
+        }
+      }
+    },
+    "river_laborer": {
+      "label": "巡水工偶",
+      "kind": "mob",
+      "chapter": 1,
+      "scene": "river_laborer/visual.tscn",
+      "cellSize": [
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        320
+      ],
+      "default": "idle",
+      "clips": {
+        "hook_sweep": {
+          "label": "浚河毒钩横扫",
+          "atlas": "river_laborer/hook_sweep.png",
+          "frameCount": 8,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": false,
+          "timingSource": "source_preview"
+        },
+        "idle": {
+          "label": "拄钩待机",
+          "atlas": "river_laborer/idle.png",
+          "frameCount": 4,
+          "columns": 4,
+          "frameDurationsMs": [
+            200,
+            200,
+            200,
+            200
+          ],
+          "loop": true,
+          "timingSource": "design_document"
+        },
+        "mud_walk": {
+          "label": "涉水拔泥步",
+          "atlas": "river_laborer/mud_walk.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "hook_charge": {
+          "label": "扛钩冲锋步",
+          "atlas": "river_laborer/hook_charge.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        }
+      }
+    },
+    "wave_magistrate": {
+      "label": "伏波画督",
+      "kind": "elite",
+      "chapter": 1,
+      "scene": "wave_magistrate/visual.tscn",
+      "cellSize": [
+        448,
+        384
+      ],
+      "anchor": [
+        224,
+        384
+      ],
+      "default": "idle",
+      "clips": {
+        "screen_wave_screen_peel": {
+          "label": "画屏推浪与虚线撕屏",
+          "atlas": "wave_magistrate/screen_wave_screen_peel.png",
+          "frameCount": 8,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": false,
+          "timingSource": "source_preview"
+        },
+        "idle": {
+          "label": "提线待机",
+          "atlas": "wave_magistrate/idle.png",
+          "frameCount": 4,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "marionette_walk": {
+          "label": "提线顿挫官步",
+          "atlas": "wave_magistrate/marionette_walk.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        }
+      }
+    },
+    "mo_zhu": {
+      "label": "墨竹",
+      "kind": "boss",
+      "chapter": 1,
+      "scene": "mo_zhu/visual.tscn",
+      "cellSize": [
+        512,
+        448
+      ],
+      "anchor": [
+        256,
+        448
+      ],
+      "default": "spear_stride",
+      "clips": {
+        "spear_thrust_ink_wall": {
+          "label": "竹枪突刺与泼墨筑墙",
+          "atlas": "mo_zhu/spear_thrust_ink_wall.png",
+          "frameCount": 8,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": false,
+          "timingSource": "source_preview"
+        },
+        "spear_stride": {
+          "label": "破浪长枪弓步",
+          "atlas": "mo_zhu/spear_stride.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "wave_surf": {
+          "label": "踏浪乘风疾行",
+          "atlas": "mo_zhu/wave_surf.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        }
+      }
+    },
+    "stele_shade": {
+      "label": "守碑阴傀",
+      "kind": "mob",
+      "chapter": 2,
+      "scene": "stele_shade/visual.tscn",
+      "cellSize": [
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        320
+      ],
+      "default": "idle",
+      "clips": {
+        "stele_chop": {
+          "label": "开山重凿",
+          "atlas": "stele_shade/stele_chop.png",
+          "frameCount": 8,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": false,
+          "timingSource": "source_preview"
+        },
+        "idle": {
+          "label": "负碑待机",
+          "atlas": "stele_shade/idle.png",
+          "frameCount": 4,
+          "columns": 4,
+          "frameDurationsMs": [
+            200,
+            200,
+            200,
+            200
+          ],
+          "loop": true,
+          "timingSource": "design_document"
+        },
+        "stele_walk": {
+          "label": "负碑重踏步",
+          "atlas": "stele_shade/stele_walk.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "ground_rush": {
+          "label": "暴走掠地步",
+          "atlas": "stele_shade/ground_rush.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        }
+      }
+    },
+    "string_inquisitor": {
+      "label": "司弦刑官",
+      "kind": "elite",
+      "chapter": 2,
+      "scene": "string_inquisitor/visual.tscn",
+      "cellSize": [
+        448,
+        384
+      ],
+      "anchor": [
+        224,
+        384
+      ],
+      "default": "idle",
+      "clips": {
+        "string_strike_armor_break": {
+          "label": "绝命挑弦与断瑟破甲",
+          "atlas": "string_inquisitor/string_strike_armor_break.png",
+          "frameCount": 8,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": false,
+          "timingSource": "source_preview"
+        },
+        "idle": {
+          "label": "蓄势待机",
+          "atlas": "string_inquisitor/idle.png",
+          "frameCount": 4,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "ghost_step": {
+          "label": "踏弦鬼魅折线步",
+          "atlas": "string_inquisitor/ghost_step.png",
+          "frameCount": 8,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        }
+      }
+    },
+    "mo_gu": {
+      "label": "墨骨",
+      "kind": "boss",
+      "chapter": 2,
+      "scene": "mo_gu/visual.tscn",
+      "cellSize": [
+        512,
+        448
+      ],
+      "anchor": [
+        256,
+        448
+      ],
+      "default": "stele_stride",
+      "clips": {
+        "iron_whip_dive": {
+          "label": "拓碑铁鞭与四翼俯冲",
+          "atlas": "mo_gu/iron_whip_dive.png",
+          "frameCount": 8,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": false,
+          "timingSource": "source_preview"
+        },
+        "stele_stride": {
+          "label": "负手拓碑沉步",
+          "atlas": "mo_gu/stele_stride.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "wing_hover": {
+          "label": "四翼悬浮",
+          "atlas": "mo_gu/wing_hover.png",
+          "frameCount": 4,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "wing_glide": {
+          "label": "四翼凌空滑翔",
+          "atlas": "mo_gu/wing_glide.png",
+          "frameCount": 8,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        }
+      }
+    },
+    "pallor_deacon": {
+      "label": "去色司祝",
+      "kind": "mob",
+      "chapter": 3,
+      "scene": "pallor_deacon/visual.tscn",
+      "cellSize": [
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        320
+      ],
+      "default": "idle",
+      "clips": {
+        "frost_sweep": {
+          "label": "铅拂扫霜",
+          "atlas": "pallor_deacon/frost_sweep.png",
+          "frameCount": 8,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": false,
+          "timingSource": "source_preview"
+        },
+        "idle": {
+          "label": "合十待机",
+          "atlas": "pallor_deacon/idle.png",
+          "frameCount": 4,
+          "columns": 4,
+          "frameDurationsMs": [
+            200,
+            200,
+            200,
+            200
+          ],
+          "loop": true,
+          "timingSource": "design_document"
+        },
+        "ceremonial_glide": {
+          "label": "僵直仪仗滑步",
+          "atlas": "pallor_deacon/ceremonial_glide.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "air_drift": {
+          "label": "凌空掠影疾飘",
+          "atlas": "pallor_deacon/air_drift.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        }
+      }
+    },
+    "balance_praetor": {
+      "label": "平规衡司",
+      "kind": "elite",
+      "chapter": 3,
+      "scene": "balance_praetor/visual.tscn",
+      "cellSize": [
+        448,
+        384
+      ],
+      "anchor": [
+        224,
+        384
+      ],
+      "default": "idle",
+      "clips": {
+        "scales_spill_balance_break": {
+          "label": "天平倾泻与虚线断衡",
+          "atlas": "balance_praetor/scales_spill_balance_break.png",
+          "frameCount": 8,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": false,
+          "timingSource": "source_preview"
+        },
+        "idle": {
+          "label": "天平悬浮待机",
+          "atlas": "balance_praetor/idle.png",
+          "frameCount": 4,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "scales_float": {
+          "label": "绝对水平御空平移",
+          "atlas": "balance_praetor/scales_float.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        }
+      }
+    },
+    "gu_kuangmo": {
+      "label": "顾狂墨",
+      "kind": "boss",
+      "chapter": 3,
+      "scene": "gu_kuangmo/visual.tscn",
+      "cellSize": [
+        512,
+        448
+      ],
+      "anchor": [
+        256,
+        448
+      ],
+      "default": "divine_hover",
+      "clips": {
+        "ruler_array_transformation": {
+          "label": "千手戒尺与殉道蜕变",
+          "atlas": "gu_kuangmo/ruler_array_transformation.png",
+          "frameCount": 7,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": false,
+          "timingSource": "source_preview"
+        },
+        "divine_hover": {
+          "label": "神明垂拱悬浮",
+          "atlas": "gu_kuangmo/divine_hover.png",
+          "frameCount": 4,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "cursive_dash": {
+          "label": "狂草癫狂疾掠",
+          "atlas": "gu_kuangmo/cursive_dash.png",
+          "frameCount": 6,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        },
+        "elder_tremble": {
+          "label": "枯槁老翁微颤",
+          "atlas": "gu_kuangmo/elder_tremble.png",
+          "frameCount": 4,
+          "columns": 4,
+          "frameDurationsMs": [
+            100,
+            100,
+            100,
+            100
+          ],
+          "loop": true,
+          "timingSource": "source_preview"
+        }
+      }
+    }
+  }
+}

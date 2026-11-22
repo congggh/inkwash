@@ -1,0 +1,208 @@
+[gd_scene load_steps=35 format=3]
+
+[ext_resource type="Script" path="../visual_driver.gd" id="driver"]
+
+[ext_resource type="Texture2D" path="frost_sweep.png" id="frost_sweep"]
+
+[ext_resource type="Texture2D" path="idle.png" id="idle"]
+
+[ext_resource type="Texture2D" path="ceremonial_glide.png" id="ceremonial_glide"]
+
+[ext_resource type="Texture2D" path="air_drift.png" id="air_drift"]
+
+[sub_resource type="AtlasTexture" id="Tex_frost_sweep_1"]
+atlas = ExtResource("frost_sweep")
+region = Rect2(0, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_frost_sweep_2"]
+atlas = ExtResource("frost_sweep")
+region = Rect2(320, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_frost_sweep_3"]
+atlas = ExtResource("frost_sweep")
+region = Rect2(640, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_frost_sweep_4"]
+atlas = ExtResource("frost_sweep")
+region = Rect2(960, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_frost_sweep_5"]
+atlas = ExtResource("frost_sweep")
+region = Rect2(0, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_frost_sweep_6"]
+atlas = ExtResource("frost_sweep")
+region = Rect2(320, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_frost_sweep_7"]
+atlas = ExtResource("frost_sweep")
+region = Rect2(640, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_frost_sweep_8"]
+atlas = ExtResource("frost_sweep")
+region = Rect2(960, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_1"]
+atlas = ExtResource("idle")
+region = Rect2(0, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_2"]
+atlas = ExtResource("idle")
+region = Rect2(320, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_3"]
+atlas = ExtResource("idle")
+region = Rect2(640, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_idle_4"]
+atlas = ExtResource("idle")
+region = Rect2(960, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ceremonial_glide_1"]
+atlas = ExtResource("ceremonial_glide")
+region = Rect2(0, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ceremonial_glide_2"]
+atlas = ExtResource("ceremonial_glide")
+region = Rect2(320, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ceremonial_glide_3"]
+atlas = ExtResource("ceremonial_glide")
+region = Rect2(640, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ceremonial_glide_4"]
+atlas = ExtResource("ceremonial_glide")
+region = Rect2(960, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ceremonial_glide_5"]
+atlas = ExtResource("ceremonial_glide")
+region = Rect2(0, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_ceremonial_glide_6"]
+atlas = ExtResource("ceremonial_glide")
+region = Rect2(320, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_air_drift_1"]
+atlas = ExtResource("air_drift")
+region = Rect2(0, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_air_drift_2"]
+atlas = ExtResource("air_drift")
+region = Rect2(320, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_air_drift_3"]
+atlas = ExtResource("air_drift")
+region = Rect2(640, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_air_drift_4"]
+atlas = ExtResource("air_drift")
+region = Rect2(960, 0, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_air_drift_5"]
+atlas = ExtResource("air_drift")
+region = Rect2(0, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="Tex_air_drift_6"]
+atlas = ExtResource("air_drift")
+region = Rect2(320, 320, 320, 320)
+filter_clip = true
+
+[sub_resource type="Animation" id="Anim_frost_sweep"]
+resource_name = "frost_sweep"
+length = 0.800000
+step = 0.016666667
+loop_mode = 0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000, 0.600000, 0.700000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_frost_sweep_1"), SubResource("Tex_frost_sweep_2"), SubResource("Tex_frost_sweep_3"), SubResource("Tex_frost_sweep_4"), SubResource("Tex_frost_sweep_5"), SubResource("Tex_frost_sweep_6"), SubResource("Tex_frost_sweep_7"), SubResource("Tex_frost_sweep_8")]
+}
+
+[sub_resource type="Animation" id="Anim_idle"]
+resource_name = "idle"
+length = 0.800000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.200000, 0.400000, 0.600000),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_idle_1"), SubResource("Tex_idle_2"), SubResource("Tex_idle_3"), SubResource("Tex_idle_4")]
+}
+
+[sub_resource type="Animation" id="Anim_ceremonial_glide"]
+resource_name = "ceremonial_glide"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_ceremonial_glide_1"), SubResource("Tex_ceremonial_glide_2"), SubResource("Tex_ceremonial_glide_3"), SubResource("Tex_ceremonial_glide_4"), SubResource("Tex_ceremonial_glide_5"), SubResource("Tex_ceremonial_glide_6")]
+}
+
+[sub_resource type="Animation" id="Anim_air_drift"]
+resource_name = "air_drift"
+length = 0.600000
+step = 0.016666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/keys = {
+"times": PackedFloat32Array(0.000000, 0.100000, 0.200000, 0.300000, 0.400000, 0.500000),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("Tex_air_drift_1"), SubResource("Tex_air_drift_2"), SubResource("Tex_air_drift_3"), SubResource("Tex_air_drift_4"), SubResource("Tex_air_drift_5"), SubResource("Tex_air_drift_6")]
+}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {&"frost_sweep": SubResource("Anim_frost_sweep"),
+&"idle": SubResource("Anim_idle"),
+&"ceremonial_glide": SubResource("Anim_ceremonial_glide"),
+&"air_drift": SubResource("Anim_air_drift")}
+
+[node name="EnemyVisual" type="Node2D"]
+script = ExtResource("driver")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+offset = Vector2(0, -160)
+texture = SubResource("Tex_idle_1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("Library")}
+autoplay = "idle"

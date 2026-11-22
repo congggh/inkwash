@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="mohen_visual_2d.tscn" id="1"]
+[ext_resource type="Script" path="preview.gd" id="2"]
+
+[node name="MoHenSOP4Preview" type="Node2D"]
+script = ExtResource("2")
+
+[node name="Paper" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Background" type="ColorRect" parent="Paper"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.88, 0.84, 0.77, 1)
+
+[node name="MoHenVisual" parent="." instance=ExtResource("1")]
+scale = Vector2(1.2, 1.2)
+
+[node name="Interface" type="CanvasLayer" parent="."]
+
+[node name="Title" type="Label" parent="Interface"]
+offset_left = 32.0
+offset_top = 26.0
+theme_override_colors/font_color = Color(0.16, 0.12, 0.09, 1)
+theme_override_font_sizes/font_size = 24
+text = "墨痕 · 动作与水墨特效"
+
+[node name="Actions" type="HBoxContainer" parent="Interface"]
+offset_left = 32.0
+offset_top = 76.0
+theme_override_constants/separation = 8
+
+[node name="Moves" type="OptionButton" parent="Interface/Actions"]
+custom_minimum_size = Vector2(220, 34)
+
+[node name="Replay" type="Button" parent="Interface/Actions"]
+text = "重播"
+
+[node name="Back" type="Button" parent="Interface/Actions"]
+text = "返回序章"
